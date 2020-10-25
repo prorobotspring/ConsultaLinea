@@ -1,0 +1,112 @@
+[2015Aug08 14:02:52,643][INFO ][1439058772643][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584120792651"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Aug08 14:02:52,655][DEBUG][1439058772643][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584120792651"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Aug08 14:02:52,656][DEBUG][1439058772643][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Aug08 14:02:52,658][DEBUG][1439058772643][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2015Aug08 14:02:52,667][DEBUG][584120792651_1439058772643][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2015Aug08 14:02:52,669][DEBUG][584120792651_1439058772643][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Aug08 14:02:52,670][DEBUG][584120792651_1439058772643][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-08-08T14:02:52.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584120792651</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Aug08 14:02:52,673][DEBUG][584120792651_1439058772643][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@183b40c]
+[2015Aug08 14:02:52,813][DEBUG][584120792651_1439058772643][execute RTBSRetrieveDelegator.java:154][Respuesta Obtenida RTBS: Subscriber not found]
+[2015Aug08 14:02:52,815][ERROR][584120792651_1439058772643][processRequest FCController.java:166][Codigo de Error: -55 Mensaje de Error: El Subscriptor no existe en RTBS - Consulta RTBS]
+[2015Aug08 14:02:52,816][DEBUG][584120792651_1439058772643][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Aug08 14:02:52,817][INFO ][584120792651_1439058772643][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-55" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="El Subscriptor no existe en RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2015Aug08 15:07:46,092][INFO ][1439062666092][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123769637"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Aug08 15:07:46,112][DEBUG][1439062666092][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123769637"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Aug08 15:07:46,113][DEBUG][1439062666092][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Aug08 15:07:46,114][DEBUG][1439062666092][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2015Aug08 15:07:46,123][DEBUG][584123769637_1439062666092][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2015Aug08 15:07:46,125][DEBUG][584123769637_1439062666092][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Aug08 15:07:46,126][DEBUG][584123769637_1439062666092][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-08-08T15:07:46.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584123769637</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Aug08 15:07:46,128][DEBUG][584123769637_1439062666092][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@457c16]
+[2015Aug08 15:07:46,264][DEBUG][584123769637_1439062666092][execute RTBSRetrieveDelegator.java:154][Respuesta Obtenida RTBS: Subscriber not found]
+[2015Aug08 15:07:46,266][ERROR][584123769637_1439062666092][processRequest FCController.java:166][Codigo de Error: -55 Mensaje de Error: El Subscriptor no existe en RTBS - Consulta RTBS]
+[2015Aug08 15:07:46,267][DEBUG][584123769637_1439062666092][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Aug08 15:07:46,269][INFO ][584123769637_1439062666092][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-55" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="El Subscriptor no existe en RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]

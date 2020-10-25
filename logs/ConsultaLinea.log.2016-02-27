@@ -1,0 +1,742 @@
+[2016Feb27 11:35:28,813][INFO ][1456589128812][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109010"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 11:35:28,816][DEBUG][1456589128812][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109010"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 11:35:28,817][DEBUG][1456589128812][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2016Feb27 11:35:28,819][DEBUG][1456589128812][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2016Feb27 11:35:28,828][DEBUG][584123109010_1456589128812][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2016Feb27 11:35:28,829][DEBUG][584123109010_1456589128812][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 11:35:28,831][DEBUG][584123109010_1456589128812][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2016-02-27T11:35:28.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584123109010</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2016Feb27 11:35:28,833][DEBUG][584123109010_1456589128812][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@a6dba1]
+[2016Feb27 11:35:28,855][ERROR][584123109010_1456589128812][execute RTBSRetrieveDelegator.java:163][Codigo de Error: 2001 Mensaje de Error: ]
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:305)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:171)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:158)
+	at java.net.Socket.connect(Socket.java:461)
+	at java.net.Socket.connect(Socket.java:411)
+	at java.net.Socket.<init>(Socket.java:310)
+	at java.net.Socket.<init>(Socket.java:185)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at ve.com.digitel.consulta.linea.delegator.RTBSRetrieveDelegator.execute(RTBSRetrieveDelegator.java:139)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.getRTBSInformation(FCHelper.java:150)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:155)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 11:35:28,859][ERROR][584123109010_1456589128812][processRequest FCController.java:200][Codigo de Error: -12 Mensaje de Error: Error en el servidor - Consulta RTBS]
+java.lang.Exception: Error de comunicacion durante la consulta a RTBS
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:163)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 11:35:28,862][DEBUG][584123109010_1456589128812][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 11:35:28,863][INFO ][584123109010_1456589128812][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-12" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Error en el servidor - Error de comunicacion durante la consulta a RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2016Feb27 12:41:11,215][INFO ][1456593071215][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109089"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:41:11,217][DEBUG][1456593071215][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109089"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:41:11,218][DEBUG][1456593071215][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2016Feb27 12:41:11,220][DEBUG][1456593071215][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2016Feb27 12:41:11,229][DEBUG][584123109089_1456593071215][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2016Feb27 12:41:11,230][DEBUG][584123109089_1456593071215][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:41:11,232][DEBUG][584123109089_1456593071215][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2016-02-27T12:41:11.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584123109089</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2016Feb27 12:41:11,234][DEBUG][584123109089_1456593071215][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@b0ba60]
+[2016Feb27 12:41:11,261][ERROR][584123109089_1456593071215][execute RTBSRetrieveDelegator.java:163][Codigo de Error: 2001 Mensaje de Error: ]
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:305)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:171)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:158)
+	at java.net.Socket.connect(Socket.java:461)
+	at java.net.Socket.connect(Socket.java:411)
+	at java.net.Socket.<init>(Socket.java:310)
+	at java.net.Socket.<init>(Socket.java:185)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at ve.com.digitel.consulta.linea.delegator.RTBSRetrieveDelegator.execute(RTBSRetrieveDelegator.java:139)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.getRTBSInformation(FCHelper.java:150)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:155)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:41:11,265][ERROR][584123109089_1456593071215][processRequest FCController.java:200][Codigo de Error: -12 Mensaje de Error: Error en el servidor - Consulta RTBS]
+java.lang.Exception: Error de comunicacion durante la consulta a RTBS
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:163)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:41:11,267][DEBUG][584123109089_1456593071215][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:41:11,269][INFO ][584123109089_1456593071215][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-12" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Error en el servidor - Error de comunicacion durante la consulta a RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2016Feb27 12:41:24,855][INFO ][1456593084855][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109089"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:41:24,857][DEBUG][1456593084855][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109089"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:41:24,859][DEBUG][1456593084855][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2016Feb27 12:41:24,860][DEBUG][1456593084855][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2016Feb27 12:41:24,869][DEBUG][584123109089_1456593084855][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2016Feb27 12:41:24,870][DEBUG][584123109089_1456593084855][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:41:24,872][DEBUG][584123109089_1456593084855][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2016-02-27T12:41:24.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584123109089</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2016Feb27 12:41:24,874][DEBUG][584123109089_1456593084855][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@19185ae]
+[2016Feb27 12:41:24,901][ERROR][584123109089_1456593084855][execute RTBSRetrieveDelegator.java:163][Codigo de Error: 2001 Mensaje de Error: ]
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:305)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:171)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:158)
+	at java.net.Socket.connect(Socket.java:461)
+	at java.net.Socket.connect(Socket.java:411)
+	at java.net.Socket.<init>(Socket.java:310)
+	at java.net.Socket.<init>(Socket.java:185)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at ve.com.digitel.consulta.linea.delegator.RTBSRetrieveDelegator.execute(RTBSRetrieveDelegator.java:139)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.getRTBSInformation(FCHelper.java:150)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:155)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:41:24,905][ERROR][584123109089_1456593084855][processRequest FCController.java:200][Codigo de Error: -12 Mensaje de Error: Error en el servidor - Consulta RTBS]
+java.lang.Exception: Error de comunicacion durante la consulta a RTBS
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:163)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:41:24,908][DEBUG][584123109089_1456593084855][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:41:24,909][INFO ][584123109089_1456593084855][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-12" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Error en el servidor - Error de comunicacion durante la consulta a RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2016Feb27 12:45:00,388][INFO ][1456593300388][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109089"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:45:00,390][DEBUG][1456593300388][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109089"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:45:00,391][DEBUG][1456593300388][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2016Feb27 12:45:00,393][DEBUG][1456593300388][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2016Feb27 12:45:00,402][DEBUG][584123109089_1456593300388][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2016Feb27 12:45:00,403][DEBUG][584123109089_1456593300388][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:45:00,405][DEBUG][584123109089_1456593300388][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2016-02-27T12:45:00.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584123109089</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2016Feb27 12:45:00,407][DEBUG][584123109089_1456593300388][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@1140910]
+[2016Feb27 12:45:00,437][ERROR][584123109089_1456593300388][execute RTBSRetrieveDelegator.java:163][Codigo de Error: 2001 Mensaje de Error: ]
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:305)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:171)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:158)
+	at java.net.Socket.connect(Socket.java:461)
+	at java.net.Socket.connect(Socket.java:411)
+	at java.net.Socket.<init>(Socket.java:310)
+	at java.net.Socket.<init>(Socket.java:185)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at ve.com.digitel.consulta.linea.delegator.RTBSRetrieveDelegator.execute(RTBSRetrieveDelegator.java:139)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.getRTBSInformation(FCHelper.java:150)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:155)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:45:00,441][ERROR][584123109089_1456593300388][processRequest FCController.java:200][Codigo de Error: -12 Mensaje de Error: Error en el servidor - Consulta RTBS]
+java.lang.Exception: Error de comunicacion durante la consulta a RTBS
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:163)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:45:00,443][DEBUG][584123109089_1456593300388][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:45:00,445][INFO ][584123109089_1456593300388][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-12" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Error en el servidor - Error de comunicacion durante la consulta a RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2016Feb27 12:45:05,513][INFO ][1456593305513][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109089"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:45:05,515][DEBUG][1456593305513][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109089"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:45:05,517][DEBUG][1456593305513][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2016Feb27 12:45:05,518][DEBUG][1456593305513][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2016Feb27 12:45:05,527][DEBUG][584123109089_1456593305513][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2016Feb27 12:45:05,529][DEBUG][584123109089_1456593305513][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:45:05,530][DEBUG][584123109089_1456593305513][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2016-02-27T12:45:05.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584123109089</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2016Feb27 12:45:05,532][DEBUG][584123109089_1456593305513][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@34fa4c]
+[2016Feb27 12:45:05,557][ERROR][584123109089_1456593305513][execute RTBSRetrieveDelegator.java:163][Codigo de Error: 2001 Mensaje de Error: ]
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:305)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:171)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:158)
+	at java.net.Socket.connect(Socket.java:461)
+	at java.net.Socket.connect(Socket.java:411)
+	at java.net.Socket.<init>(Socket.java:310)
+	at java.net.Socket.<init>(Socket.java:185)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at ve.com.digitel.consulta.linea.delegator.RTBSRetrieveDelegator.execute(RTBSRetrieveDelegator.java:139)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.getRTBSInformation(FCHelper.java:150)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:155)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:45:05,561][ERROR][584123109089_1456593305513][processRequest FCController.java:200][Codigo de Error: -12 Mensaje de Error: Error en el servidor - Consulta RTBS]
+java.lang.Exception: Error de comunicacion durante la consulta a RTBS
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:163)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:45:05,563][DEBUG][584123109089_1456593305513][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:45:05,565][INFO ][584123109089_1456593305513][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-12" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Error en el servidor - Error de comunicacion durante la consulta a RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2016Feb27 12:49:45,304][INFO ][1456593585303][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109088"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:49:45,305][DEBUG][1456593585303][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109088"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:49:45,307][DEBUG][1456593585303][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2016Feb27 12:49:45,308][DEBUG][1456593585303][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2016Feb27 12:49:45,317][DEBUG][584123109088_1456593585303][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2016Feb27 12:49:45,319][DEBUG][584123109088_1456593585303][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:49:45,320][DEBUG][584123109088_1456593585303][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2016-02-27T12:49:45.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584123109088</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2016Feb27 12:49:45,322][DEBUG][584123109088_1456593585303][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@d56fbd]
+[2016Feb27 12:49:45,343][ERROR][584123109088_1456593585303][execute RTBSRetrieveDelegator.java:163][Codigo de Error: 2001 Mensaje de Error: ]
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:305)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:171)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:158)
+	at java.net.Socket.connect(Socket.java:461)
+	at java.net.Socket.connect(Socket.java:411)
+	at java.net.Socket.<init>(Socket.java:310)
+	at java.net.Socket.<init>(Socket.java:185)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at ve.com.digitel.consulta.linea.delegator.RTBSRetrieveDelegator.execute(RTBSRetrieveDelegator.java:139)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.getRTBSInformation(FCHelper.java:150)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:155)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:49:45,348][ERROR][584123109088_1456593585303][processRequest FCController.java:200][Codigo de Error: -12 Mensaje de Error: Error en el servidor - Consulta RTBS]
+java.lang.Exception: Error de comunicacion durante la consulta a RTBS
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:163)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:49:45,350][DEBUG][584123109088_1456593585303][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:49:45,352][INFO ][584123109088_1456593585303][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-12" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Error en el servidor - Error de comunicacion durante la consulta a RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2016Feb27 12:49:52,161][INFO ][1456593592161][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109088"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:49:52,163][DEBUG][1456593592161][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584123109088"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2016Feb27 12:49:52,165][DEBUG][1456593592161][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2016Feb27 12:49:52,166][DEBUG][1456593592161][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2016Feb27 12:49:52,175][DEBUG][584123109088_1456593592161][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2016Feb27 12:49:52,177][DEBUG][584123109088_1456593592161][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:49:52,179][DEBUG][584123109088_1456593592161][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2016-02-27T12:49:52.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584123109088</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2016Feb27 12:49:52,181][DEBUG][584123109088_1456593592161][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@52a652]
+[2016Feb27 12:49:52,204][ERROR][584123109088_1456593592161][execute RTBSRetrieveDelegator.java:163][Codigo de Error: 2001 Mensaje de Error: ]
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:305)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:171)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:158)
+	at java.net.Socket.connect(Socket.java:461)
+	at java.net.Socket.connect(Socket.java:411)
+	at java.net.Socket.<init>(Socket.java:310)
+	at java.net.Socket.<init>(Socket.java:185)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at ve.com.digitel.consulta.linea.delegator.RTBSRetrieveDelegator.execute(RTBSRetrieveDelegator.java:139)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.getRTBSInformation(FCHelper.java:150)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:155)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:49:52,207][ERROR][584123109088_1456593592161][processRequest FCController.java:200][Codigo de Error: -12 Mensaje de Error: Error en el servidor - Consulta RTBS]
+java.lang.Exception: Error de comunicacion durante la consulta a RTBS
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:163)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Feb27 12:49:52,210][DEBUG][584123109088_1456593592161][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Feb27 12:49:52,212][INFO ][584123109088_1456593592161][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-12" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Error en el servidor - Error de comunicacion durante la consulta a RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]

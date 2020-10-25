@@ -1,0 +1,3760 @@
+[2013Sep18 09:28:00,955][INFO ][1379510880954][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 09:28:00,999][INFO ][1379510880999][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 09:28:01,745][INFO ][584129117195_1379510880954][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 09:28:01,790][INFO ][584129117195_1379510880999][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 09:28:01,850][INFO ][584129117195_1379510880954][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5975.666676" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus 3G ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130917091722" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4459.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="238455.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00074" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus 3G ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 09:28:01,868][INFO ][584129117195_1379510880999][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5975.666676" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus 3G ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130917091722" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4459.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="238455.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00074" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus 3G ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 09:59:12,416][INFO ][1379512752416][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 09:59:12,435][INFO ][1379512752435][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 09:59:13,213][INFO ][584129117195_1379512752416][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 09:59:13,228][INFO ][584129117195_1379512752435][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 09:59:13,325][INFO ][584129117195_1379512752416][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5975.666676" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus 3G ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130917091722" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4459.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="238455.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00074" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus 3G ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 09:59:13,328][INFO ][584129117195_1379512752435][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5975.666676" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus 3G ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130917091722" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4459.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="238455.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00074" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus 3G ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 10:07:48,404][INFO ][1379513268404][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 10:07:48,407][INFO ][1379513268407][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 10:07:49,380][INFO ][584129117195_1379513268407][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 10:07:49,427][INFO ][584129117195_1379513268404][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 10:07:49,473][INFO ][584129117195_1379513268407][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5975.666676" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus 3G ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130917091722" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4459.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="238455.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00074" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus 3G ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 10:07:49,503][INFO ][584129117195_1379513268404][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5975.666676" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus 3G ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130917091722" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4459.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="238455.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00074" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus 3G ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 10:20:45,214][INFO ][1379514045214][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 10:20:46,050][INFO ][584129117195_1379514045214][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 10:20:46,153][INFO ][584129117195_1379514045214][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5975.666676" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus 3G ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130917091722" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4459.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="238455.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00074" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus 3G ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 10:20:46,480][INFO ][1379514046480][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 10:20:47,224][INFO ][584129117195_1379514046480][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 10:20:47,317][INFO ][584129117195_1379514046480][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5975.666676" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus 3G ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130917091722" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4459.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="238455.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00074" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus 3G ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:03:39,535][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaLinea - VERSION: 1.0]
+[2013Sep18 18:03:39,552][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de linea]
+[2013Sep18 18:03:39,556][INFO ][1379541819555][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:03:39,556][INFO ][1379541819555][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:03:41,571][INFO ][584129117195_1379541819555][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:03:41,571][INFO ][584129117195_1379541819555][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:03:47,018][INFO ][584129117195_1379541819555][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5950.517866" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Plan Super Pegado 100 - ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918170200" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4589.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="242615.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00090" />
+			<PARAM name="PRODUCT_DESC" value="Plan Super Pegado 100 - ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:03:47,019][INFO ][584129117195_1379541819555][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5950.517866" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Plan Super Pegado 100 - ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918170200" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4589.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="242615.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00090" />
+			<PARAM name="PRODUCT_DESC" value="Plan Super Pegado 100 - ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:04:43,346][INFO ][1379541883346][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:04:44,108][INFO ][584129117195_1379541883346][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:04:44,212][INFO ][584129117195_1379541883346][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5950.517866" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Plan Super Pegado 100 - ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918170200" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4589.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="242615.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00090" />
+			<PARAM name="PRODUCT_DESC" value="Plan Super Pegado 100 - ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:04:44,535][INFO ][1379541884535][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:04:45,334][INFO ][584129117195_1379541884535][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:04:45,436][INFO ][584129117195_1379541884535][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5950.517866" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Plan Super Pegado 100 - ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918170200" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4589.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="242615.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00090" />
+			<PARAM name="PRODUCT_DESC" value="Plan Super Pegado 100 - ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:06:25,196][INFO ][1379541985196][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:06:25,965][INFO ][584129117195_1379541985196][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:06:26,055][INFO ][584129117195_1379541985196][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5944.714296" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Rumba 412 ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918173602" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4654.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="242875.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00053" />
+			<PARAM name="PRODUCT_DESC" value="Rumba 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:52:28,757][INFO ][1379544748757][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:52:29,577][INFO ][584129117195_1379544748757][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:52:29,673][INFO ][584129117195_1379544748757][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5944.714296" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Rumba 412 ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918173602" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4654.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="242875.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00053" />
+			<PARAM name="PRODUCT_DESC" value="Rumba 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:52:30,000][INFO ][1379544750000][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:52:30,747][INFO ][584129117195_1379544750000][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:52:30,861][INFO ][584129117195_1379544750000][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5944.714296" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Rumba 412 ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918173602" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="4654.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="242875.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00053" />
+			<PARAM name="PRODUCT_DESC" value="Rumba 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:54:50,100][INFO ][1379544890100][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:54:50,899][INFO ][584129117195_1379544890100][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:54:51,013][INFO ][584129117195_1379544890100][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Gremial ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00061" />
+			<PARAM name="PRODUCT_DESC" value="Gremial ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+		<RECORD name="PRODUCT" value="1">
+			<PARAM name="PRODUCT_NAME" value="MOV-SERVICIO-ESPE-00177" />
+			<PARAM name="PRODUCT_DESC" value="Asistente Hogar 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918000000" />
+			<PARAM name="LAST_ACT_DATE" value="20130918000000" />
+			<PARAM name="EXP_DATE" value="20190101235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:54:51,346][INFO ][1379544891346][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:54:52,103][INFO ][584129117195_1379544891346][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:54:52,227][INFO ][584129117195_1379544891346][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Gremial ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00061" />
+			<PARAM name="PRODUCT_DESC" value="Gremial ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+		<RECORD name="PRODUCT" value="1">
+			<PARAM name="PRODUCT_NAME" value="MOV-SERVICIO-ESPE-00177" />
+			<PARAM name="PRODUCT_DESC" value="Asistente Hogar 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918000000" />
+			<PARAM name="LAST_ACT_DATE" value="20130918000000" />
+			<PARAM name="EXP_DATE" value="20190101235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:56:38,462][INFO ][1379544998462][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:56:39,244][INFO ][584129117195_1379544998462][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:56:39,359][INFO ][584129117195_1379544998462][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Gremial ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00061" />
+			<PARAM name="PRODUCT_DESC" value="Gremial ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+		<RECORD name="PRODUCT" value="1">
+			<PARAM name="PRODUCT_NAME" value="MOV-SERVICIO-ESPE-00177" />
+			<PARAM name="PRODUCT_DESC" value="Asistente Hogar 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918000000" />
+			<PARAM name="LAST_ACT_DATE" value="20130918000000" />
+			<PARAM name="EXP_DATE" value="20190101235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:56:39,689][INFO ][1379544999689][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:56:40,458][INFO ][584129117195_1379544999689][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:56:40,586][INFO ][584129117195_1379544999689][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Gremial ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00061" />
+			<PARAM name="PRODUCT_DESC" value="Gremial ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+		<RECORD name="PRODUCT" value="1">
+			<PARAM name="PRODUCT_NAME" value="MOV-SERVICIO-ESPE-00177" />
+			<PARAM name="PRODUCT_DESC" value="Asistente Hogar 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918000000" />
+			<PARAM name="LAST_ACT_DATE" value="20130918000000" />
+			<PARAM name="EXP_DATE" value="20190101235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:56:51,632][INFO ][1379545011632][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:56:51,646][INFO ][1379545011646][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:56:52,430][INFO ][584129117195_1379545011632][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:56:52,446][INFO ][584129117195_1379545011646][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:56:52,552][INFO ][584129117195_1379545011646][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Gremial ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00061" />
+			<PARAM name="PRODUCT_DESC" value="Gremial ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+		<RECORD name="PRODUCT" value="1">
+			<PARAM name="PRODUCT_NAME" value="MOV-SERVICIO-ESPE-00177" />
+			<PARAM name="PRODUCT_DESC" value="Asistente Hogar 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918000000" />
+			<PARAM name="LAST_ACT_DATE" value="20130918000000" />
+			<PARAM name="EXP_DATE" value="20190101235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:56:52,576][INFO ][584129117195_1379545011632][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Gremial ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00061" />
+			<PARAM name="PRODUCT_DESC" value="Gremial ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+		<RECORD name="PRODUCT" value="1">
+			<PARAM name="PRODUCT_NAME" value="MOV-SERVICIO-ESPE-00177" />
+			<PARAM name="PRODUCT_DESC" value="Asistente Hogar 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918000000" />
+			<PARAM name="LAST_ACT_DATE" value="20130918000000" />
+			<PARAM name="EXP_DATE" value="20190101235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:57:03,643][INFO ][1379545023643][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:57:04,472][INFO ][584129117195_1379545023643][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:57:04,596][INFO ][584129117195_1379545023643][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Gremial ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00061" />
+			<PARAM name="PRODUCT_DESC" value="Gremial ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+		<RECORD name="PRODUCT" value="1">
+			<PARAM name="PRODUCT_NAME" value="MOV-SERVICIO-ESPE-00177" />
+			<PARAM name="PRODUCT_DESC" value="Asistente Hogar 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918000000" />
+			<PARAM name="LAST_ACT_DATE" value="20130918000000" />
+			<PARAM name="EXP_DATE" value="20190101235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 18:57:04,922][INFO ][1379545024922][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 18:57:05,670][INFO ][584129117195_1379545024922][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 18:57:05,793][INFO ][584129117195_1379545024922][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Gremial ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00061" />
+			<PARAM name="PRODUCT_DESC" value="Gremial ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+		<RECORD name="PRODUCT" value="1">
+			<PARAM name="PRODUCT_NAME" value="MOV-SERVICIO-ESPE-00177" />
+			<PARAM name="PRODUCT_DESC" value="Asistente Hogar 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918000000" />
+			<PARAM name="LAST_ACT_DATE" value="20130918000000" />
+			<PARAM name="EXP_DATE" value="20190101235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:07:42,666][INFO ][1379545662666][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:07:43,449][INFO ][584129117195_1379545662666][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 19:07:43,576][INFO ][584129117195_1379545662666][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Gremial ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00061" />
+			<PARAM name="PRODUCT_DESC" value="Gremial ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+		<RECORD name="PRODUCT" value="1">
+			<PARAM name="PRODUCT_NAME" value="MOV-SERVICIO-ESPE-00177" />
+			<PARAM name="PRODUCT_DESC" value="Asistente Hogar 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918000000" />
+			<PARAM name="LAST_ACT_DATE" value="20130918000000" />
+			<PARAM name="EXP_DATE" value="20190101235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:07:43,904][INFO ][1379545663903][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:07:44,649][INFO ][584129117195_1379545663903][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 19:07:44,789][INFO ][584129117195_1379545663903][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Gremial ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00061" />
+			<PARAM name="PRODUCT_DESC" value="Gremial ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+		<RECORD name="PRODUCT" value="1">
+			<PARAM name="PRODUCT_NAME" value="MOV-SERVICIO-ESPE-00177" />
+			<PARAM name="PRODUCT_DESC" value="Asistente Hogar 412 ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918000000" />
+			<PARAM name="LAST_ACT_DATE" value="20130918000000" />
+			<PARAM name="EXP_DATE" value="20190101235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:13:32,140][INFO ][1379546012140][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:13:32,926][INFO ][584129117195_1379546012140][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 19:13:33,015][INFO ][584129117195_1379546012140][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00017" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:14:28,711][INFO ][1379546068711][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:14:28,748][INFO ][1379546068748][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:14:29,537][INFO ][584129117195_1379546068711][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 19:14:29,552][INFO ][584129117195_1379546068748][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 19:14:29,621][INFO ][584129117195_1379546068711][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00017" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:14:29,812][INFO ][584129117195_1379546068748][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00017" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130805181759" />
+			<PARAM name="LAST_ACT_DATE" value="20130805181759" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:50:01,670][INFO ][1379548201670][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:50:02,425][INFO ][584122680587_1379548201670][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 19:50:02,889][INFO ][584122680587_1379548201670][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:50:03,218][INFO ][1379548203218][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:50:03,993][INFO ][584122680587_1379548203218][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 19:50:04,218][INFO ][584122680587_1379548203218][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:50:09,134][INFO ][1379548209134][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:50:09,896][INFO ][584122680587_1379548209134][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 19:50:10,025][INFO ][584122680587_1379548209134][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:50:10,190][INFO ][1379548210190][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:50:10,937][INFO ][584122680587_1379548210190][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 19:50:11,056][INFO ][584122680587_1379548210190][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:02:39,621][INFO ][1379548959621][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:02:40,356][INFO ][584122680587_1379548959621][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 20:02:40,497][INFO ][584122680587_1379548959621][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:02:54,301][INFO ][1379548974300][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:02:55,047][INFO ][584122680587_1379548974300][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 20:02:55,162][INFO ][584122680587_1379548974300][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:06:37,118][INFO ][1379549197118][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:06:37,875][INFO ][584122680587_1379549197118][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 20:06:37,987][INFO ][584122680587_1379549197118][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:06:38,315][INFO ][1379549198315][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:06:39,089][INFO ][584122680587_1379549198315][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 20:06:39,206][INFO ][584122680587_1379549198315][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:07:09,442][INFO ][1379549229442][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:07:10,202][INFO ][584122680587_1379549229442][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 20:07:10,324][INFO ][584122680587_1379549229442][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:07:10,651][INFO ][1379549230651][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:07:11,415][INFO ][584122680587_1379549230651][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 20:07:11,532][INFO ][584122680587_1379549230651][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:07:15,612][INFO ][1379549235612][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:07:16,369][INFO ][584122680587_1379549235612][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 20:07:16,484][INFO ][584122680587_1379549235612][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:07:16,650][INFO ][1379549236650][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:07:17,385][INFO ][584122680587_1379549236650][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 20:07:17,504][INFO ][584122680587_1379549236650][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:09:12,521][INFO ][1379549352521][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:09:13,276][INFO ][584122680587_1379549352521][processRequest FCController.java:219][FriendFamily: 10]
+[2013Sep18 20:09:13,392][INFO ][584122680587_1379549352521][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="-277.999984" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20130802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Inteligente 500" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130901003607" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00123" />
+			<PARAM name="PRODUCT_DESC" value="Inteligente 500" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:12:12,722][INFO ][1379549532722][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:12:13,458][INFO ][584122680587_1379549532722][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 20:12:13,576][INFO ][584122680587_1379549532722][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="500.0" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20140802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Pre Activo Movil" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918194034" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00115" />
+			<PARAM name="PRODUCT_DESC" value="Pre Activo Movil" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:12:13,901][INFO ][1379549533901][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:12:14,638][INFO ][584122680587_1379549533901][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 20:12:14,753][INFO ][584122680587_1379549533901][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="500.0" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20140802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Pre Activo Movil" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918194034" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00115" />
+			<PARAM name="PRODUCT_DESC" value="Pre Activo Movil" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:12:18,819][INFO ][1379549538819][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:12:19,559][INFO ][584122680587_1379549538819][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 20:12:19,678][INFO ][584122680587_1379549538819][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="500.0" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20140802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Pre Activo Movil" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918194034" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00115" />
+			<PARAM name="PRODUCT_DESC" value="Pre Activo Movil" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:12:19,841][INFO ][1379549539841][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:12:20,603][INFO ][584122680587_1379549539841][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 20:12:20,718][INFO ][584122680587_1379549539841][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="500.0" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20140802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Pre Activo Movil" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918194034" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00115" />
+			<PARAM name="PRODUCT_DESC" value="Pre Activo Movil" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 20:12:40,429][INFO ][1379549560429][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584122680587"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 20:12:41,156][INFO ][584122680587_1379549560429][processRequest FCController.java:219][FriendFamily: 0]
+[2013Sep18 20:12:41,269][INFO ][584122680587_1379549560429][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958021002260522455" />
+		<PARAM name="MSISDN" value="584122680587" />
+		<PARAM name="IMSI" value="734021006534769" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="48994640" />
+		<PARAM name="PIN2" value="6202" />
+		<PARAM name="PUK2" value="65085860" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="500.0" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130731180215" />
+		<PARAM name="ACTIVE_DATE" value="20130731180017" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20140802235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Pre Activo Movil" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918194034" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00115" />
+			<PARAM name="PRODUCT_DESC" value="Pre Activo Movil" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130731180017" />
+			<PARAM name="LAST_ACT_DATE" value="20130731180017" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]

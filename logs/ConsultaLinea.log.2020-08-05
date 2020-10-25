@@ -1,0 +1,5 @@
+[2020Aug05 23:04:11,391][INFO ][1596684851391][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="IVR"/><PARAM name="MSISDN" value="584122248026"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2020Aug05 23:04:11,395][DEBUG][1596684851391][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="IVR"/><PARAM name="MSISDN" value="584122248026"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2020Aug05 23:04:11,397][DEBUG][1596684851391][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2020Aug05 23:04:11,398][DEBUG][1596684851391][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2020Aug05 23:04:11,413][DEBUG][584122248026_1596684851391][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]

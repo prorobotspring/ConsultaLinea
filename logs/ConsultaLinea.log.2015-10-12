@@ -1,0 +1,1130 @@
+[2015Oct12 02:55:39,604][INFO ][1444634739604][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="IVR"/>
+			<PARAM name="MSISDN" value="584120263593"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 02:55:39,633][DEBUG][1444634739604][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="IVR"/>
+			<PARAM name="MSISDN" value="584120263593"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 02:55:39,634][DEBUG][1444634739604][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Oct12 02:55:39,635][DEBUG][1444634739604][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2015Oct12 02:55:39,659][DEBUG][584120263593_1444634739604][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2015Oct12 02:55:39,660][DEBUG][584120263593_1444634739604][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 02:55:39,662][DEBUG][584120263593_1444634739604][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-10-12T02:55:39.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584120263593</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Oct12 02:55:39,664][DEBUG][584120263593_1444634739604][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@2a623]
+[2015Oct12 02:55:39,915][DEBUG][584120263593_1444634739604][execute RTBSRetrieveDelegator.java:154][Respuesta Obtenida RTBS: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><VersionInfoHeader xmlns="http://comverse-in.com/prepaid/ccws"><ProductVersion /><CustomerVersion /></VersionInfoHeader><wsa:Action>http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistoryResponse</wsa:Action><wsa:MessageID>urn:uuid:c0c061e3-02cc-4991-99f3-808ad4884f99</wsa:MessageID><wsa:RelatesTo>urn:uuid:1d5a3bcc-3b1f-4513-9248-ca3d4ee62d77</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-0b4a89a5-3b3d-4f3c-bb8e-1e6d56c17d31"><wsu:Created>2015-10-12T07:29:29Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><RetrieveSubscriberWithIdentityNoHistoryResponse xmlns="http://comverse-in.com/prepaid/ccws"><RetrieveSubscriberWithIdentityNoHistoryResult><SubscriberID>584120263593</SubscriberID><SubscriberInfo><FirstName>Pruebas </FirstName><LastName>IVR TESTING</LastName><Address1>12345678</Address1><Address2>87654321</Address2></SubscriberInfo><SubscriberPhoneBook /><SubscriberData><NotificationLanguage>Spanish</NotificationLanguage><RoamingCreditLimitAsString>0</RoamingCreditLimitAsString><CurrentState>Suspended(S1)</CurrentState><COSName>Radicall Plus</COSName><PINChangeNeeded>false</PINChangeNeeded><LanguageName>Spanish</LanguageName><NumberFreeAnCallsString>0</NumberFreeAnCallsString><BillCycleDay>10</BillCycleDay><NotificationLevel>0</NotificationLevel><MarketSegment>ANY</MarketSegment><LimitType>NONE</LimitType><BonusPlan><BonusPlanName>BP_SILENTES12_NON_CUR01</BonusPlanName></BonusPlan><BonusPlan><BonusPlanName>BP_BOCHEMO12_REC_NON_EVE01</BonusPlanName></BonusPlan><Balances><Balance><Balance>1000</Balance><AccountExpiration>2015-03-12T23:59:59.0000000-04:30</AccountExpiration><BalanceName>Core</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1000</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_BS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_LDI</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_FF</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance></Balances><SPName>DIGITEL</SPName><CreationDate>2015-03-10T17:05:04.0000000-04:30</CreationDate><DateEnterActive>2015-03-10T17:05:47.0000000-04:30</DateEnterActive><PreviousState>Active</PreviousState><PrevTransDate>2015-03-13T00:19:33.0000000-04:30</PrevTransDate><LastTransDate>2015-03-10T17:05:58.0000000-04:30</LastTransDate><AccountType>Individual</AccountType><LastCallCharge>0</LastCallCharge><FreeFFChgAllowance>0</FreeFFChgAllowance><FFChangeCount>0</FFChangeCount><CurrencyCode>VEB</CurrencyCode><PromisedPaymentAmount>0</PromisedPaymentAmount><PromisedPaymentDueDate>0001-01-01T00:00:00.0000000-04:30</PromisedPaymentDueDate><PromisedPaymentBalanceID>0</PromisedPaymentBalanceID><CosInstantiationTimeStamp>0001-01-01T00:00:00.0000000-04:30</CosInstantiationTimeStamp><Accumulator><AccumulatorName>AC_REC_ACT_EVE01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_CUR01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_EVE01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><LoyaltyEnrollmentDate>0001-01-01T00:00:00.0000000-04:30</LoyaltyEnrollmentDate><NextLoyaltySyncDate>0001-01-01T00:00:00.0000000-04:30</NextLoyaltySyncDate><LoyaltyScaleRate>0</LoyaltyScaleRate><LoyaltyBonusScale>0</LoyaltyBonusScale><CurrentHappyHourActiveDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourActiveDate><CurrentHappyHourEndDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourEndDate><PreferredNumberDate>0001-01-01T00:00:00.0000000-04:30</PreferredNumberDate></SubscriberData></RetrieveSubscriberWithIdentityNoHistoryResult></RetrieveSubscriberWithIdentityNoHistoryResponse></soap:Body></soap:Envelope>]
+[2015Oct12 02:55:39,919][DEBUG][584120263593_1444634739604][processRequest FCController.java:175][Consulta RTBS: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><VersionInfoHeader xmlns="http://comverse-in.com/prepaid/ccws"><ProductVersion /><CustomerVersion /></VersionInfoHeader><wsa:Action>http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistoryResponse</wsa:Action><wsa:MessageID>urn:uuid:c0c061e3-02cc-4991-99f3-808ad4884f99</wsa:MessageID><wsa:RelatesTo>urn:uuid:1d5a3bcc-3b1f-4513-9248-ca3d4ee62d77</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-0b4a89a5-3b3d-4f3c-bb8e-1e6d56c17d31"><wsu:Created>2015-10-12T07:29:29Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><RetrieveSubscriberWithIdentityNoHistoryResponse xmlns="http://comverse-in.com/prepaid/ccws"><RetrieveSubscriberWithIdentityNoHistoryResult><SubscriberID>584120263593</SubscriberID><SubscriberInfo><FirstName>Pruebas </FirstName><LastName>IVR TESTING</LastName><Address1>12345678</Address1><Address2>87654321</Address2></SubscriberInfo><SubscriberPhoneBook /><SubscriberData><NotificationLanguage>Spanish</NotificationLanguage><RoamingCreditLimitAsString>0</RoamingCreditLimitAsString><CurrentState>Suspended(S1)</CurrentState><COSName>Radicall Plus</COSName><PINChangeNeeded>false</PINChangeNeeded><LanguageName>Spanish</LanguageName><NumberFreeAnCallsString>0</NumberFreeAnCallsString><BillCycleDay>10</BillCycleDay><NotificationLevel>0</NotificationLevel><MarketSegment>ANY</MarketSegment><LimitType>NONE</LimitType><BonusPlan><BonusPlanName>BP_SILENTES12_NON_CUR01</BonusPlanName></BonusPlan><BonusPlan><BonusPlanName>BP_BOCHEMO12_REC_NON_EVE01</BonusPlanName></BonusPlan><Balances><Balance><Balance>1000</Balance><AccountExpiration>2015-03-12T23:59:59.0000000-04:30</AccountExpiration><BalanceName>Core</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1000</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_BS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_LDI</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_FF</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance></Balances><SPName>DIGITEL</SPName><CreationDate>2015-03-10T17:05:04.0000000-04:30</CreationDate><DateEnterActive>2015-03-10T17:05:47.0000000-04:30</DateEnterActive><PreviousState>Active</PreviousState><PrevTransDate>2015-03-13T00:19:33.0000000-04:30</PrevTransDate><LastTransDate>2015-03-10T17:05:58.0000000-04:30</LastTransDate><AccountType>Individual</AccountType><LastCallCharge>0</LastCallCharge><FreeFFChgAllowance>0</FreeFFChgAllowance><FFChangeCount>0</FFChangeCount><CurrencyCode>VEB</CurrencyCode><PromisedPaymentAmount>0</PromisedPaymentAmount><PromisedPaymentDueDate>0001-01-01T00:00:00.0000000-04:30</PromisedPaymentDueDate><PromisedPaymentBalanceID>0</PromisedPaymentBalanceID><CosInstantiationTimeStamp>0001-01-01T00:00:00.0000000-04:30</CosInstantiationTimeStamp><Accumulator><AccumulatorName>AC_REC_ACT_EVE01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_CUR01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_EVE01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><LoyaltyEnrollmentDate>0001-01-01T00:00:00.0000000-04:30</LoyaltyEnrollmentDate><NextLoyaltySyncDate>0001-01-01T00:00:00.0000000-04:30</NextLoyaltySyncDate><LoyaltyScaleRate>0</LoyaltyScaleRate><LoyaltyBonusScale>0</LoyaltyBonusScale><CurrentHappyHourActiveDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourActiveDate><CurrentHappyHourEndDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourEndDate><PreferredNumberDate>0001-01-01T00:00:00.0000000-04:30</PreferredNumberDate></SubscriberData></RetrieveSubscriberWithIdentityNoHistoryResult></RetrieveSubscriberWithIdentityNoHistoryResponse></soap:Body></soap:Envelope>]
+[2015Oct12 02:55:39,922][DEBUG][584120263593_1444634739604][processRequest FCController.java:178][PASO 3: Obtener IMSI, COS y Zone]
+[2015Oct12 02:55:39,924][DEBUG][584120263593_1444634739604][buildRequestRTBS FCHelper.java:122][INICIO de parser XML obtenido de RTBS]
+[2015Oct12 02:55:39,938][DEBUG][584120263593_1444634739604][processRequest FCController.java:211][PASO 4 y 5: Consulta RTBS, GetCacheEX. FriendsFamily]
+[2015Oct12 02:55:39,940][DEBUG][584120263593_1444634739604][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 02:55:39,941][DEBUG][584120263593_1444634739604][buildSOAPBody RTBSGetCacheExDelegator.java:167][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-17659794" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>y5CVzChQvZX/mtdnWU9a1g==</wsse:Nonce>
+            <wsu:Created>2015-10-12T02:55:39.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:GetCacheEx>
+         <ccws:cacheRequest>128</ccws:cacheRequest>
+      </ccws:GetCacheEx>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Oct12 02:55:39,943][DEBUG][584120263593_1444634739604][execute RTBSGetCacheExDelegator.java:125][str: org.apache.commons.httpclient.methods.StringRequestEntity@2021b9]
+[2015Oct12 02:55:41,040][INFO ][584120263593_1444634739604][processRequest FCController.java:219][FriendFamily: 0]
+[2015Oct12 02:55:41,042][DEBUG][584120263593_1444634739604][processRequest FCController.java:235][PASO 6 y 7: Transformacion de F&F a traves dek configurador]
+[2015Oct12 02:55:41,043][DEBUG][584120263593_1444634739604][processRequest FCController.java:254][PASO 8 y 9: Llamadas al servicio SLS SIMCARD]
+[2015Oct12 02:55:41,045][ERROR][584120263593_1444634739604][processRequest FCController.java:265][Codigo de Error: -12 Mensaje de Error: Error en el servidor - SLSSimCardInformation]
+java.lang.NullPointerException
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:259)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2015Oct12 02:55:41,047][DEBUG][584120263593_1444634739604][processRequest FCController.java:274][PASO 10 y 11: Llamadas al servicio de equivalencias]
+[2015Oct12 02:55:41,093][DEBUG][584120263593_1444634739604][processRequest FCController.java:290][PASO 12: Construccion de xml de salidas]
+[2015Oct12 02:55:41,095][DEBUG][584120263593_1444634739604][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 02:55:41,096][DEBUG][584120263593_1444634739604][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 02:55:41,098][DEBUG][584120263593_1444634739604][processRequest FCController.java:298][Response: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="0000000000000000000" />
+		<PARAM name="MSISDN" value="584120263593" />
+		<PARAM name="IMSI" value="null" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="12345678" />
+		<PARAM name="PIN2" value="null" />
+		<PARAM name="PUK2" value="87654321" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="1000.0" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20150310170504" />
+		<PARAM name="ACTIVE_DATE" value="20150310170547" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20150312235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Plan Radi-call Plus" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20150310170558" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00007" />
+			<PARAM name="PRODUCT_DESC" value="Plan Radi-call Plus" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20150310170547" />
+			<PARAM name="LAST_ACT_DATE" value="20150310170547" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2015Oct12 02:55:41,100][INFO ][584120263593_1444634739604][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="0000000000000000000" />
+		<PARAM name="MSISDN" value="584120263593" />
+		<PARAM name="IMSI" value="null" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="12345678" />
+		<PARAM name="PIN2" value="null" />
+		<PARAM name="PUK2" value="87654321" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Suspendida por falta de saldo y/o crédito expirado" />
+		<PARAM name="MONEY_SITUATION" value="1000.0" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20150310170504" />
+		<PARAM name="ACTIVE_DATE" value="20150310170547" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20150312235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Plan Radi-call Plus" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20150310170558" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00007" />
+			<PARAM name="PRODUCT_DESC" value="Plan Radi-call Plus" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20150310170547" />
+			<PARAM name="LAST_ACT_DATE" value="20150310170547" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2015Oct12 02:59:09,524][INFO ][1444634949524][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="IVR"/>
+			<PARAM name="MSISDN" value="584127518801"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 02:59:09,526][DEBUG][1444634949524][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="IVR"/>
+			<PARAM name="MSISDN" value="584127518801"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 02:59:09,527][DEBUG][1444634949524][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Oct12 02:59:09,529][DEBUG][1444634949524][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2015Oct12 02:59:09,537][DEBUG][584127518801_1444634949524][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2015Oct12 02:59:09,539][DEBUG][584127518801_1444634949524][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 02:59:09,540][DEBUG][584127518801_1444634949524][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-10-12T02:59:09.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584127518801</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Oct12 02:59:09,542][DEBUG][584127518801_1444634949524][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@1700726]
+[2015Oct12 02:59:09,734][DEBUG][584127518801_1444634949524][execute RTBSRetrieveDelegator.java:154][Respuesta Obtenida RTBS: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><VersionInfoHeader xmlns="http://comverse-in.com/prepaid/ccws"><ProductVersion /><CustomerVersion /></VersionInfoHeader><wsa:Action>http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistoryResponse</wsa:Action><wsa:MessageID>urn:uuid:dc6bedb7-ca79-4081-8808-80e743ecb324</wsa:MessageID><wsa:RelatesTo>urn:uuid:a168e461-820c-4166-8e6e-a196b540ed5e</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-28f409aa-a8a1-4fdd-8a2d-6101b452966c"><wsu:Created>2015-10-12T07:32:59Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><RetrieveSubscriberWithIdentityNoHistoryResponse xmlns="http://comverse-in.com/prepaid/ccws"><RetrieveSubscriberWithIdentityNoHistoryResult><SubscriberID>584127518801</SubscriberID><SubscriberInfo><FirstName>Pruebas</FirstName></SubscriberInfo><SubscriberPhoneBook /><SubscriberData><NotificationLanguage>Spanish</NotificationLanguage><RoamingCreditLimitAsString>0</RoamingCreditLimitAsString><CurrentState>Active</CurrentState><COSName>Super Pegado Plus 450ZF</COSName><PINChangeNeeded>false</PINChangeNeeded><LanguageName>Spanish</LanguageName><IMSI>734021011410999</IMSI><NumberFreeAnCallsString>0</NumberFreeAnCallsString><ESN>MT</ESN><BillCycleDay>23</BillCycleDay><NotificationLevel>0</NotificationLevel><MarketSegment>ANY</MarketSegment><LimitType>NONE</LimitType><BonusPlan><BonusPlanName>BP_BOCHEMO12_REC_NON_EVE01</BonusPlanName></BonusPlan><BonusPlan><BonusPlanName>BP_SILENTES12_NON_CUR01</BonusPlanName></BonusPlan><Balances><Balance><Balance>1627.525</Balance><AccountExpiration>2016-08-26T23:59:59.0000000-04:30</AccountExpiration><BalanceName>Core</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1627.525</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>1368</Balance><AccountExpiration>2015-11-26T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1368</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>10</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>10</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>20700</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>20700</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>12000</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>12000</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>7200</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>7200</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>28330.7</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>28330.7</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_BS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_LDI</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>2300</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_FF</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>2300</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance></Balances><SPName>DIGITEL</SPName><CreationDate>2014-05-23T10:28:55.0000000-04:30</CreationDate><DateEnterActive>2014-05-23T10:27:51.0000000-04:30</DateEnterActive><PreviousState>Fraud Lockout</PreviousState><PrevTransDate>2015-09-08T14:52:42.0000000-04:30</PrevTransDate><LastTransDate>2015-10-09T13:34:14.0000000-04:30</LastTransDate><AccountType>Individual</AccountType><LastCallCharge>0</LastCallCharge><FreeFFChgAllowance>0</FreeFFChgAllowance><FFChangeCount>0</FFChangeCount><CurrencyCode>VEB</CurrencyCode><PromisedPaymentAmount>0</PromisedPaymentAmount><PromisedPaymentDueDate>0001-01-01T00:00:00.0000000-04:30</PromisedPaymentDueDate><PromisedPaymentBalanceID>0</PromisedPaymentBalanceID><CosInstantiationTimeStamp>0001-01-01T00:00:00.0000000-04:30</CosInstantiationTimeStamp><Accumulator><AccumulatorName>AC_REC_ACT_EVE01</AccumulatorName><Amount>6</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_CUR01</AccumulatorName><Amount>640.23</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_EVE01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><LoyaltyEnrollmentDate>0001-01-01T00:00:00.0000000-04:30</LoyaltyEnrollmentDate><NextLoyaltySyncDate>0001-01-01T00:00:00.0000000-04:30</NextLoyaltySyncDate><LoyaltyScaleRate>0</LoyaltyScaleRate><LoyaltyBonusScale>0</LoyaltyBonusScale><CurrentHappyHourActiveDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourActiveDate><CurrentHappyHourEndDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourEndDate><PreferredNumberDate>0001-01-01T00:00:00.0000000-04:30</PreferredNumberDate></SubscriberData></RetrieveSubscriberWithIdentityNoHistoryResult></RetrieveSubscriberWithIdentityNoHistoryResponse></soap:Body></soap:Envelope>]
+[2015Oct12 02:59:09,738][DEBUG][584127518801_1444634949524][processRequest FCController.java:175][Consulta RTBS: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><VersionInfoHeader xmlns="http://comverse-in.com/prepaid/ccws"><ProductVersion /><CustomerVersion /></VersionInfoHeader><wsa:Action>http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistoryResponse</wsa:Action><wsa:MessageID>urn:uuid:dc6bedb7-ca79-4081-8808-80e743ecb324</wsa:MessageID><wsa:RelatesTo>urn:uuid:a168e461-820c-4166-8e6e-a196b540ed5e</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-28f409aa-a8a1-4fdd-8a2d-6101b452966c"><wsu:Created>2015-10-12T07:32:59Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><RetrieveSubscriberWithIdentityNoHistoryResponse xmlns="http://comverse-in.com/prepaid/ccws"><RetrieveSubscriberWithIdentityNoHistoryResult><SubscriberID>584127518801</SubscriberID><SubscriberInfo><FirstName>Pruebas</FirstName></SubscriberInfo><SubscriberPhoneBook /><SubscriberData><NotificationLanguage>Spanish</NotificationLanguage><RoamingCreditLimitAsString>0</RoamingCreditLimitAsString><CurrentState>Active</CurrentState><COSName>Super Pegado Plus 450ZF</COSName><PINChangeNeeded>false</PINChangeNeeded><LanguageName>Spanish</LanguageName><IMSI>734021011410999</IMSI><NumberFreeAnCallsString>0</NumberFreeAnCallsString><ESN>MT</ESN><BillCycleDay>23</BillCycleDay><NotificationLevel>0</NotificationLevel><MarketSegment>ANY</MarketSegment><LimitType>NONE</LimitType><BonusPlan><BonusPlanName>BP_BOCHEMO12_REC_NON_EVE01</BonusPlanName></BonusPlan><BonusPlan><BonusPlanName>BP_SILENTES12_NON_CUR01</BonusPlanName></BonusPlan><Balances><Balance><Balance>1627.525</Balance><AccountExpiration>2016-08-26T23:59:59.0000000-04:30</AccountExpiration><BalanceName>Core</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1627.525</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>1368</Balance><AccountExpiration>2015-11-26T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1368</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>10</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>10</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>20700</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>20700</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>12000</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>12000</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>7200</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>7200</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>28330.7</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>28330.7</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_BS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_LDI</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>2300</Balance><AccountExpiration>2015-10-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_FF</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>2300</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance></Balances><SPName>DIGITEL</SPName><CreationDate>2014-05-23T10:28:55.0000000-04:30</CreationDate><DateEnterActive>2014-05-23T10:27:51.0000000-04:30</DateEnterActive><PreviousState>Fraud Lockout</PreviousState><PrevTransDate>2015-09-08T14:52:42.0000000-04:30</PrevTransDate><LastTransDate>2015-10-09T13:34:14.0000000-04:30</LastTransDate><AccountType>Individual</AccountType><LastCallCharge>0</LastCallCharge><FreeFFChgAllowance>0</FreeFFChgAllowance><FFChangeCount>0</FFChangeCount><CurrencyCode>VEB</CurrencyCode><PromisedPaymentAmount>0</PromisedPaymentAmount><PromisedPaymentDueDate>0001-01-01T00:00:00.0000000-04:30</PromisedPaymentDueDate><PromisedPaymentBalanceID>0</PromisedPaymentBalanceID><CosInstantiationTimeStamp>0001-01-01T00:00:00.0000000-04:30</CosInstantiationTimeStamp><Accumulator><AccumulatorName>AC_REC_ACT_EVE01</AccumulatorName><Amount>6</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_CUR01</AccumulatorName><Amount>640.23</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_EVE01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><LoyaltyEnrollmentDate>0001-01-01T00:00:00.0000000-04:30</LoyaltyEnrollmentDate><NextLoyaltySyncDate>0001-01-01T00:00:00.0000000-04:30</NextLoyaltySyncDate><LoyaltyScaleRate>0</LoyaltyScaleRate><LoyaltyBonusScale>0</LoyaltyBonusScale><CurrentHappyHourActiveDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourActiveDate><CurrentHappyHourEndDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourEndDate><PreferredNumberDate>0001-01-01T00:00:00.0000000-04:30</PreferredNumberDate></SubscriberData></RetrieveSubscriberWithIdentityNoHistoryResult></RetrieveSubscriberWithIdentityNoHistoryResponse></soap:Body></soap:Envelope>]
+[2015Oct12 02:59:09,741][DEBUG][584127518801_1444634949524][processRequest FCController.java:178][PASO 3: Obtener IMSI, COS y Zone]
+[2015Oct12 02:59:09,743][DEBUG][584127518801_1444634949524][buildRequestRTBS FCHelper.java:122][INICIO de parser XML obtenido de RTBS]
+[2015Oct12 02:59:09,758][DEBUG][584127518801_1444634949524][processRequest FCController.java:211][PASO 4 y 5: Consulta RTBS, GetCacheEX. FriendsFamily]
+[2015Oct12 02:59:09,759][DEBUG][584127518801_1444634949524][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 02:59:09,761][DEBUG][584127518801_1444634949524][buildSOAPBody RTBSGetCacheExDelegator.java:167][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-17659794" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>y5CVzChQvZX/mtdnWU9a1g==</wsse:Nonce>
+            <wsu:Created>2015-10-12T02:59:09.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:GetCacheEx>
+         <ccws:cacheRequest>128</ccws:cacheRequest>
+      </ccws:GetCacheEx>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Oct12 02:59:09,763][DEBUG][584127518801_1444634949524][execute RTBSGetCacheExDelegator.java:125][str: org.apache.commons.httpclient.methods.StringRequestEntity@e0c792]
+[2015Oct12 02:59:10,859][INFO ][584127518801_1444634949524][processRequest FCController.java:219][FriendFamily: 1]
+[2015Oct12 02:59:10,861][DEBUG][584127518801_1444634949524][processRequest FCController.java:235][PASO 6 y 7: Transformacion de F&F a traves dek configurador]
+[2015Oct12 02:59:10,863][DEBUG][584127518801_1444634949524][execute FFnameByTaxZoneDelegator.java:97][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Oct12 02:59:10,876][DEBUG][584127518801_1444634949524][processRequest FCController.java:254][PASO 8 y 9: Llamadas al servicio SLS SIMCARD]
+[2015Oct12 02:59:10,877][DEBUG][584127518801_1444634949524][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 02:59:10,879][DEBUG][584127518801_1444634949524][buildXMLIn SLSSimCardDelegator.java:112][Comando Ensamblado <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_IN>
+	<Login></Login>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+<SIMCard>
+	<IMSI>734021011410999</IMSI>
+</SIMCard>
+</RTBS_SLS_IN>
+]
+[2015Oct12 02:59:11,003][DEBUG][584127518801_1444634949524][getSLSSimCardInformation FCHelper.java:221][xml <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_OUT>
+	<OperationMessage>
+		<Code>RTBS_SLS_OM0003</Code>
+		<Message>La informacion solicitada no ha sido encontrada en la base de datos</Message>
+	</OperationMessage>
+</RTBS_SLS_OUT>
+
+]
+[2015Oct12 02:59:11,011][DEBUG][584127518801_1444634949524][processRequest FCController.java:274][PASO 10 y 11: Llamadas al servicio de equivalencias]
+[2015Oct12 02:59:11,048][DEBUG][584127518801_1444634949524][processRequest FCController.java:290][PASO 12: Construccion de xml de salidas]
+[2015Oct12 02:59:11,050][DEBUG][584127518801_1444634949524][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 02:59:11,051][DEBUG][584127518801_1444634949524][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 02:59:11,053][DEBUG][584127518801_1444634949524][processRequest FCController.java:298][Response: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="0000000000000000000" />
+		<PARAM name="MSISDN" value="584127518801" />
+		<PARAM name="IMSI" value="734021011410999" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="null" />
+		<PARAM name="PIN2" value="null" />
+		<PARAM name="PUK2" value="null" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="1627.525" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20140523102855" />
+		<PARAM name="ACTIVE_DATE" value="20140523102751" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20160826235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Super Pegado Plus 450ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20151009133414" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="1368.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="39900.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00154" />
+			<PARAM name="PRODUCT_DESC" value="Super Pegado Plus 450ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20140523102751" />
+			<PARAM name="LAST_ACT_DATE" value="20140523102751" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2015Oct12 02:59:11,055][INFO ][584127518801_1444634949524][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="0000000000000000000" />
+		<PARAM name="MSISDN" value="584127518801" />
+		<PARAM name="IMSI" value="734021011410999" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="null" />
+		<PARAM name="PIN2" value="null" />
+		<PARAM name="PUK2" value="null" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="1627.525" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20140523102855" />
+		<PARAM name="ACTIVE_DATE" value="20140523102751" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20160826235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Super Pegado Plus 450ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20151009133414" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="1368.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="39900.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="010101000000" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00154" />
+			<PARAM name="PRODUCT_DESC" value="Super Pegado Plus 450ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20140523102751" />
+			<PARAM name="LAST_ACT_DATE" value="20140523102751" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2015Oct12 09:32:41,817][INFO ][1444658561816][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="FEATC"/>
+			<PARAM name="MSISDN" value="584120580859"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 09:32:41,828][DEBUG][1444658561816][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="FEATC"/>
+			<PARAM name="MSISDN" value="584120580859"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 09:32:41,830][DEBUG][1444658561816][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Oct12 09:32:41,831][DEBUG][1444658561816][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2015Oct12 09:32:41,848][DEBUG][584120580859_1444658561816][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2015Oct12 09:32:41,849][DEBUG][584120580859_1444658561816][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 09:32:41,851][DEBUG][584120580859_1444658561816][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-10-12T09:32:41.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584120580859</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Oct12 09:32:41,853][DEBUG][584120580859_1444658561816][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@191a390]
+[2015Oct12 09:32:41,990][DEBUG][584120580859_1444658561816][execute RTBSRetrieveDelegator.java:154][Respuesta Obtenida RTBS: Subscriber not found]
+[2015Oct12 09:32:41,991][ERROR][584120580859_1444658561816][processRequest FCController.java:166][Codigo de Error: -55 Mensaje de Error: El Subscriptor no existe en RTBS - Consulta RTBS]
+[2015Oct12 09:32:41,993][DEBUG][584120580859_1444658561816][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 09:32:41,994][INFO ][584120580859_1444658561816][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-55" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="El Subscriptor no existe en RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2015Oct12 09:49:33,984][INFO ][1444659573984][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="IVR"/>
+			<PARAM name="MSISDN" value="584122107377"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 09:49:33,986][DEBUG][1444659573984][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="IVR"/>
+			<PARAM name="MSISDN" value="584122107377"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 09:49:33,987][DEBUG][1444659573984][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Oct12 09:49:33,989][DEBUG][1444659573984][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2015Oct12 09:49:33,997][DEBUG][584122107377_1444659573984][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2015Oct12 09:49:33,999][DEBUG][584122107377_1444659573984][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 09:49:34,000][DEBUG][584122107377_1444659573984][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-10-12T09:49:33.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584122107377</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Oct12 09:49:34,002][DEBUG][584122107377_1444659573984][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@610077]
+[2015Oct12 09:49:34,140][DEBUG][584122107377_1444659573984][execute RTBSRetrieveDelegator.java:154][Respuesta Obtenida RTBS: Subscriber not found]
+[2015Oct12 09:49:34,141][ERROR][584122107377_1444659573984][processRequest FCController.java:166][Codigo de Error: -55 Mensaje de Error: El Subscriptor no existe en RTBS - Consulta RTBS]
+[2015Oct12 09:49:34,142][DEBUG][584122107377_1444659573984][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 09:49:34,144][INFO ][584122107377_1444659573984][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-55" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="El Subscriptor no existe en RTBS" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2015Oct12 12:29:53,890][INFO ][1444669193890][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584128596666"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 12:29:53,900][DEBUG][1444669193890][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584128596666"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 12:29:53,902][DEBUG][1444669193890][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Oct12 12:29:53,903][DEBUG][1444669193890][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2015Oct12 12:29:53,912][DEBUG][584128596666_1444669193890][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2015Oct12 12:29:53,913][DEBUG][584128596666_1444669193890][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 12:29:53,915][DEBUG][584128596666_1444669193890][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-10-12T12:29:53.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584128596666</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Oct12 12:29:53,917][DEBUG][584128596666_1444669193890][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@13f00c6]
+[2015Oct12 12:29:54,453][DEBUG][584128596666_1444669193890][execute RTBSRetrieveDelegator.java:154][Respuesta Obtenida RTBS: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><VersionInfoHeader xmlns="http://comverse-in.com/prepaid/ccws"><ProductVersion /><CustomerVersion /></VersionInfoHeader><wsa:Action>http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistoryResponse</wsa:Action><wsa:MessageID>urn:uuid:55b94d2a-f470-44fc-8aa4-89893a3f330b</wsa:MessageID><wsa:RelatesTo>urn:uuid:dbfab889-2837-4e36-b75e-f6300e4b58c5</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-6303aaec-9a9b-44c4-8edd-d3ddbad0ba20"><wsu:Created>2015-10-12T17:03:44Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><RetrieveSubscriberWithIdentityNoHistoryResponse xmlns="http://comverse-in.com/prepaid/ccws"><RetrieveSubscriberWithIdentityNoHistoryResult><SubscriberID>584128596666</SubscriberID><SubscriberInfo /><SubscriberPhoneBook /><SubscriberData><NotificationLanguage>Spanish</NotificationLanguage><RoamingCreditLimitAsString>0</RoamingCreditLimitAsString><CurrentState>Active</CurrentState><COSName>BAM 1250</COSName><PINChangeNeeded>false</PINChangeNeeded><LanguageName>Spanish</LanguageName><IMSI>734023128596666</IMSI><NumberFreeAnCallsString>0</NumberFreeAnCallsString><ESN>MT</ESN><BillCycleDay>22</BillCycleDay><NotificationLevel>0</NotificationLevel><LimitType>NONE</LimitType><Balances><Balance><Balance>672.4</Balance><AccountExpiration>2021-01-02T23:59:59.0000000-04:30</AccountExpiration><BalanceName>Core</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>672.4</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>10240000</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>10240000</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_BS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_LDI</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance></Balances><SPName>DIGITEL</SPName><CreationDate>2014-05-22T16:19:40.0000000-04:30</CreationDate><DateEnterActive>2014-05-22T04:18:40.0000000-04:30</DateEnterActive><PreviousState>Suspended(S1)</PreviousState><PrevTransDate>2015-09-10T09:33:15.0000000-04:30</PrevTransDate><LastTransDate>2015-10-11T00:08:56.0000000-04:30</LastTransDate><AccountType>Individual</AccountType><LastCallCharge>0</LastCallCharge><FreeFFChgAllowance>0</FreeFFChgAllowance><FFChangeCount>0</FFChangeCount><CurrencyCode>VEB</CurrencyCode><PromisedPaymentAmount>0</PromisedPaymentAmount><PromisedPaymentDueDate>0001-01-01T00:00:00.0000000-04:30</PromisedPaymentDueDate><PromisedPaymentBalanceID>0</PromisedPaymentBalanceID><CosInstantiationTimeStamp>0001-01-01T00:00:00.0000000-04:30</CosInstantiationTimeStamp><LoyaltyEnrollmentDate>0001-01-01T00:00:00.0000000-04:30</LoyaltyEnrollmentDate><NextLoyaltySyncDate>0001-01-01T00:00:00.0000000-04:30</NextLoyaltySyncDate><LoyaltyScaleRate>0</LoyaltyScaleRate><LoyaltyBonusScale>0</LoyaltyBonusScale><CurrentHappyHourActiveDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourActiveDate><CurrentHappyHourEndDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourEndDate><PreferredNumberDate>0001-01-01T00:00:00.0000000-04:30</PreferredNumberDate></SubscriberData></RetrieveSubscriberWithIdentityNoHistoryResult></RetrieveSubscriberWithIdentityNoHistoryResponse></soap:Body></soap:Envelope>]
+[2015Oct12 12:29:54,457][DEBUG][584128596666_1444669193890][processRequest FCController.java:175][Consulta RTBS: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><VersionInfoHeader xmlns="http://comverse-in.com/prepaid/ccws"><ProductVersion /><CustomerVersion /></VersionInfoHeader><wsa:Action>http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistoryResponse</wsa:Action><wsa:MessageID>urn:uuid:55b94d2a-f470-44fc-8aa4-89893a3f330b</wsa:MessageID><wsa:RelatesTo>urn:uuid:dbfab889-2837-4e36-b75e-f6300e4b58c5</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-6303aaec-9a9b-44c4-8edd-d3ddbad0ba20"><wsu:Created>2015-10-12T17:03:44Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><RetrieveSubscriberWithIdentityNoHistoryResponse xmlns="http://comverse-in.com/prepaid/ccws"><RetrieveSubscriberWithIdentityNoHistoryResult><SubscriberID>584128596666</SubscriberID><SubscriberInfo /><SubscriberPhoneBook /><SubscriberData><NotificationLanguage>Spanish</NotificationLanguage><RoamingCreditLimitAsString>0</RoamingCreditLimitAsString><CurrentState>Active</CurrentState><COSName>BAM 1250</COSName><PINChangeNeeded>false</PINChangeNeeded><LanguageName>Spanish</LanguageName><IMSI>734023128596666</IMSI><NumberFreeAnCallsString>0</NumberFreeAnCallsString><ESN>MT</ESN><BillCycleDay>22</BillCycleDay><NotificationLevel>0</NotificationLevel><LimitType>NONE</LimitType><Balances><Balance><Balance>672.4</Balance><AccountExpiration>2021-01-02T23:59:59.0000000-04:30</AccountExpiration><BalanceName>Core</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>672.4</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>10240000</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>10240000</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_BS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_LDI</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance></Balances><SPName>DIGITEL</SPName><CreationDate>2014-05-22T16:19:40.0000000-04:30</CreationDate><DateEnterActive>2014-05-22T04:18:40.0000000-04:30</DateEnterActive><PreviousState>Suspended(S1)</PreviousState><PrevTransDate>2015-09-10T09:33:15.0000000-04:30</PrevTransDate><LastTransDate>2015-10-11T00:08:56.0000000-04:30</LastTransDate><AccountType>Individual</AccountType><LastCallCharge>0</LastCallCharge><FreeFFChgAllowance>0</FreeFFChgAllowance><FFChangeCount>0</FFChangeCount><CurrencyCode>VEB</CurrencyCode><PromisedPaymentAmount>0</PromisedPaymentAmount><PromisedPaymentDueDate>0001-01-01T00:00:00.0000000-04:30</PromisedPaymentDueDate><PromisedPaymentBalanceID>0</PromisedPaymentBalanceID><CosInstantiationTimeStamp>0001-01-01T00:00:00.0000000-04:30</CosInstantiationTimeStamp><LoyaltyEnrollmentDate>0001-01-01T00:00:00.0000000-04:30</LoyaltyEnrollmentDate><NextLoyaltySyncDate>0001-01-01T00:00:00.0000000-04:30</NextLoyaltySyncDate><LoyaltyScaleRate>0</LoyaltyScaleRate><LoyaltyBonusScale>0</LoyaltyBonusScale><CurrentHappyHourActiveDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourActiveDate><CurrentHappyHourEndDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourEndDate><PreferredNumberDate>0001-01-01T00:00:00.0000000-04:30</PreferredNumberDate></SubscriberData></RetrieveSubscriberWithIdentityNoHistoryResult></RetrieveSubscriberWithIdentityNoHistoryResponse></soap:Body></soap:Envelope>]
+[2015Oct12 12:29:54,460][DEBUG][584128596666_1444669193890][processRequest FCController.java:178][PASO 3: Obtener IMSI, COS y Zone]
+[2015Oct12 12:29:54,461][DEBUG][584128596666_1444669193890][buildRequestRTBS FCHelper.java:122][INICIO de parser XML obtenido de RTBS]
+[2015Oct12 12:29:54,475][DEBUG][584128596666_1444669193890][processRequest FCController.java:211][PASO 4 y 5: Consulta RTBS, GetCacheEX. FriendsFamily]
+[2015Oct12 12:29:54,477][DEBUG][584128596666_1444669193890][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 12:29:54,478][DEBUG][584128596666_1444669193890][buildSOAPBody RTBSGetCacheExDelegator.java:167][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-17659794" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>y5CVzChQvZX/mtdnWU9a1g==</wsse:Nonce>
+            <wsu:Created>2015-10-12T12:29:54.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:GetCacheEx>
+         <ccws:cacheRequest>128</ccws:cacheRequest>
+      </ccws:GetCacheEx>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Oct12 12:29:54,480][DEBUG][584128596666_1444669193890][execute RTBSGetCacheExDelegator.java:125][str: org.apache.commons.httpclient.methods.StringRequestEntity@12a25e6]
+[2015Oct12 12:29:55,581][INFO ][584128596666_1444669193890][processRequest FCController.java:219][FriendFamily: 0]
+[2015Oct12 12:29:55,583][DEBUG][584128596666_1444669193890][processRequest FCController.java:235][PASO 6 y 7: Transformacion de F&F a traves dek configurador]
+[2015Oct12 12:29:55,585][DEBUG][584128596666_1444669193890][processRequest FCController.java:254][PASO 8 y 9: Llamadas al servicio SLS SIMCARD]
+[2015Oct12 12:29:55,586][DEBUG][584128596666_1444669193890][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 12:29:55,588][DEBUG][584128596666_1444669193890][buildXMLIn SLSSimCardDelegator.java:112][Comando Ensamblado <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_IN>
+	<Login></Login>
+	<Channel>SIEBEL</Channel>
+	<System>SIEBEL</System>
+<SIMCard>
+	<IMSI>734023128596666</IMSI>
+</SIMCard>
+</RTBS_SLS_IN>
+]
+[2015Oct12 12:29:55,694][DEBUG][584128596666_1444669193890][getSLSSimCardInformation FCHelper.java:221][xml <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_OUT>
+	<OperationMessage>
+		<Code>RTBS_SLS_OM0003</Code>
+		<Message>La informacion solicitada no ha sido encontrada en la base de datos</Message>
+	</OperationMessage>
+</RTBS_SLS_OUT>
+
+]
+[2015Oct12 12:29:55,702][DEBUG][584128596666_1444669193890][processRequest FCController.java:274][PASO 10 y 11: Llamadas al servicio de equivalencias]
+[2015Oct12 12:29:55,741][DEBUG][584128596666_1444669193890][processRequest FCController.java:290][PASO 12: Construccion de xml de salidas]
+[2015Oct12 12:29:55,742][DEBUG][584128596666_1444669193890][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 12:29:55,744][DEBUG][584128596666_1444669193890][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 12:29:55,745][DEBUG][584128596666_1444669193890][processRequest FCController.java:298][Response: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="0000000000000000000" />
+		<PARAM name="MSISDN" value="584128596666" />
+		<PARAM name="IMSI" value="734023128596666" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="null" />
+		<PARAM name="PIN2" value="null" />
+		<PARAM name="PUK2" value="null" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="672.4" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20140522161940" />
+		<PARAM name="ACTIVE_DATE" value="20140522041840" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20210102235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Plan BAM 1250" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20151011000856" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20151110235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00133" />
+			<PARAM name="PRODUCT_DESC" value="Plan BAM 1250" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20140522041840" />
+			<PARAM name="LAST_ACT_DATE" value="20140522041840" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2015Oct12 12:29:55,747][INFO ][584128596666_1444669193890][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="0000000000000000000" />
+		<PARAM name="MSISDN" value="584128596666" />
+		<PARAM name="IMSI" value="734023128596666" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="null" />
+		<PARAM name="PIN2" value="null" />
+		<PARAM name="PUK2" value="null" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="672.4" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20140522161940" />
+		<PARAM name="ACTIVE_DATE" value="20140522041840" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20210102235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Plan BAM 1250" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20151011000856" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20151110235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00133" />
+			<PARAM name="PRODUCT_DESC" value="Plan BAM 1250" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20140522041840" />
+			<PARAM name="LAST_ACT_DATE" value="20140522041840" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2015Oct12 12:29:57,151][INFO ][1444669197151][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584128596666"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 12:29:57,153][DEBUG][1444669197151][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+	<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+		<IBX_ADP_IN_PARAMETERS>
+			<PARAM name="SUBSYS" value="SIEBEL"/>
+			<PARAM name="MSISDN" value="584128596666"/>
+		</IBX_ADP_IN_PARAMETERS>
+	</EAIMessage>]
+[2015Oct12 12:29:57,154][DEBUG][1444669197151][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Oct12 12:29:57,155][DEBUG][1444669197151][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2015Oct12 12:29:57,164][DEBUG][584128596666_1444669197151][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2015Oct12 12:29:57,165][DEBUG][584128596666_1444669197151][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 12:29:57,167][DEBUG][584128596666_1444669197151][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-10-12T12:29:57.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584128596666</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Oct12 12:29:57,169][DEBUG][584128596666_1444669197151][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@b31178]
+[2015Oct12 12:29:57,330][DEBUG][584128596666_1444669197151][execute RTBSRetrieveDelegator.java:154][Respuesta Obtenida RTBS: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><VersionInfoHeader xmlns="http://comverse-in.com/prepaid/ccws"><ProductVersion /><CustomerVersion /></VersionInfoHeader><wsa:Action>http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistoryResponse</wsa:Action><wsa:MessageID>urn:uuid:2f36fa02-143f-4c25-91f7-c0f6f9bd31df</wsa:MessageID><wsa:RelatesTo>urn:uuid:eee2bc4c-1c25-4112-bf65-b363b3889872</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-e3edbaab-ee3d-4977-a3e6-aadec169f7bb"><wsu:Created>2015-10-12T17:03:47Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><RetrieveSubscriberWithIdentityNoHistoryResponse xmlns="http://comverse-in.com/prepaid/ccws"><RetrieveSubscriberWithIdentityNoHistoryResult><SubscriberID>584128596666</SubscriberID><SubscriberInfo /><SubscriberPhoneBook /><SubscriberData><NotificationLanguage>Spanish</NotificationLanguage><RoamingCreditLimitAsString>0</RoamingCreditLimitAsString><CurrentState>Active</CurrentState><COSName>BAM 1250</COSName><PINChangeNeeded>false</PINChangeNeeded><LanguageName>Spanish</LanguageName><IMSI>734023128596666</IMSI><NumberFreeAnCallsString>0</NumberFreeAnCallsString><ESN>MT</ESN><BillCycleDay>22</BillCycleDay><NotificationLevel>0</NotificationLevel><LimitType>NONE</LimitType><Balances><Balance><Balance>672.4</Balance><AccountExpiration>2021-01-02T23:59:59.0000000-04:30</AccountExpiration><BalanceName>Core</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>672.4</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>10240000</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>10240000</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_BS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_LDI</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance></Balances><SPName>DIGITEL</SPName><CreationDate>2014-05-22T16:19:40.0000000-04:30</CreationDate><DateEnterActive>2014-05-22T04:18:40.0000000-04:30</DateEnterActive><PreviousState>Suspended(S1)</PreviousState><PrevTransDate>2015-09-10T09:33:15.0000000-04:30</PrevTransDate><LastTransDate>2015-10-11T00:08:56.0000000-04:30</LastTransDate><AccountType>Individual</AccountType><LastCallCharge>0</LastCallCharge><FreeFFChgAllowance>0</FreeFFChgAllowance><FFChangeCount>0</FFChangeCount><CurrencyCode>VEB</CurrencyCode><PromisedPaymentAmount>0</PromisedPaymentAmount><PromisedPaymentDueDate>0001-01-01T00:00:00.0000000-04:30</PromisedPaymentDueDate><PromisedPaymentBalanceID>0</PromisedPaymentBalanceID><CosInstantiationTimeStamp>0001-01-01T00:00:00.0000000-04:30</CosInstantiationTimeStamp><LoyaltyEnrollmentDate>0001-01-01T00:00:00.0000000-04:30</LoyaltyEnrollmentDate><NextLoyaltySyncDate>0001-01-01T00:00:00.0000000-04:30</NextLoyaltySyncDate><LoyaltyScaleRate>0</LoyaltyScaleRate><LoyaltyBonusScale>0</LoyaltyBonusScale><CurrentHappyHourActiveDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourActiveDate><CurrentHappyHourEndDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourEndDate><PreferredNumberDate>0001-01-01T00:00:00.0000000-04:30</PreferredNumberDate></SubscriberData></RetrieveSubscriberWithIdentityNoHistoryResult></RetrieveSubscriberWithIdentityNoHistoryResponse></soap:Body></soap:Envelope>]
+[2015Oct12 12:29:57,333][DEBUG][584128596666_1444669197151][processRequest FCController.java:175][Consulta RTBS: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><VersionInfoHeader xmlns="http://comverse-in.com/prepaid/ccws"><ProductVersion /><CustomerVersion /></VersionInfoHeader><wsa:Action>http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistoryResponse</wsa:Action><wsa:MessageID>urn:uuid:2f36fa02-143f-4c25-91f7-c0f6f9bd31df</wsa:MessageID><wsa:RelatesTo>urn:uuid:eee2bc4c-1c25-4112-bf65-b363b3889872</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-e3edbaab-ee3d-4977-a3e6-aadec169f7bb"><wsu:Created>2015-10-12T17:03:47Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><RetrieveSubscriberWithIdentityNoHistoryResponse xmlns="http://comverse-in.com/prepaid/ccws"><RetrieveSubscriberWithIdentityNoHistoryResult><SubscriberID>584128596666</SubscriberID><SubscriberInfo /><SubscriberPhoneBook /><SubscriberData><NotificationLanguage>Spanish</NotificationLanguage><RoamingCreditLimitAsString>0</RoamingCreditLimitAsString><CurrentState>Active</CurrentState><COSName>BAM 1250</COSName><PINChangeNeeded>false</PINChangeNeeded><LanguageName>Spanish</LanguageName><IMSI>734023128596666</IMSI><NumberFreeAnCallsString>0</NumberFreeAnCallsString><ESN>MT</ESN><BillCycleDay>22</BillCycleDay><NotificationLevel>0</NotificationLevel><LimitType>NONE</LimitType><Balances><Balance><Balance>672.4</Balance><AccountExpiration>2021-01-02T23:59:59.0000000-04:30</AccountExpiration><BalanceName>Core</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>672.4</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>10240000</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>10240000</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_BS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2015-11-10T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_LDI</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance></Balances><SPName>DIGITEL</SPName><CreationDate>2014-05-22T16:19:40.0000000-04:30</CreationDate><DateEnterActive>2014-05-22T04:18:40.0000000-04:30</DateEnterActive><PreviousState>Suspended(S1)</PreviousState><PrevTransDate>2015-09-10T09:33:15.0000000-04:30</PrevTransDate><LastTransDate>2015-10-11T00:08:56.0000000-04:30</LastTransDate><AccountType>Individual</AccountType><LastCallCharge>0</LastCallCharge><FreeFFChgAllowance>0</FreeFFChgAllowance><FFChangeCount>0</FFChangeCount><CurrencyCode>VEB</CurrencyCode><PromisedPaymentAmount>0</PromisedPaymentAmount><PromisedPaymentDueDate>0001-01-01T00:00:00.0000000-04:30</PromisedPaymentDueDate><PromisedPaymentBalanceID>0</PromisedPaymentBalanceID><CosInstantiationTimeStamp>0001-01-01T00:00:00.0000000-04:30</CosInstantiationTimeStamp><LoyaltyEnrollmentDate>0001-01-01T00:00:00.0000000-04:30</LoyaltyEnrollmentDate><NextLoyaltySyncDate>0001-01-01T00:00:00.0000000-04:30</NextLoyaltySyncDate><LoyaltyScaleRate>0</LoyaltyScaleRate><LoyaltyBonusScale>0</LoyaltyBonusScale><CurrentHappyHourActiveDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourActiveDate><CurrentHappyHourEndDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourEndDate><PreferredNumberDate>0001-01-01T00:00:00.0000000-04:30</PreferredNumberDate></SubscriberData></RetrieveSubscriberWithIdentityNoHistoryResult></RetrieveSubscriberWithIdentityNoHistoryResponse></soap:Body></soap:Envelope>]
+[2015Oct12 12:29:57,337][DEBUG][584128596666_1444669197151][processRequest FCController.java:178][PASO 3: Obtener IMSI, COS y Zone]
+[2015Oct12 12:29:57,338][DEBUG][584128596666_1444669197151][buildRequestRTBS FCHelper.java:122][INICIO de parser XML obtenido de RTBS]
+[2015Oct12 12:29:57,352][DEBUG][584128596666_1444669197151][processRequest FCController.java:211][PASO 4 y 5: Consulta RTBS, GetCacheEX. FriendsFamily]
+[2015Oct12 12:29:57,354][DEBUG][584128596666_1444669197151][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 12:29:57,355][DEBUG][584128596666_1444669197151][buildSOAPBody RTBSGetCacheExDelegator.java:167][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-17659794" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>y5CVzChQvZX/mtdnWU9a1g==</wsse:Nonce>
+            <wsu:Created>2015-10-12T12:29:57.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:GetCacheEx>
+         <ccws:cacheRequest>128</ccws:cacheRequest>
+      </ccws:GetCacheEx>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Oct12 12:29:57,357][DEBUG][584128596666_1444669197151][execute RTBSGetCacheExDelegator.java:125][str: org.apache.commons.httpclient.methods.StringRequestEntity@1e1ff2a]
+[2015Oct12 12:29:58,436][INFO ][584128596666_1444669197151][processRequest FCController.java:219][FriendFamily: 0]
+[2015Oct12 12:29:58,438][DEBUG][584128596666_1444669197151][processRequest FCController.java:235][PASO 6 y 7: Transformacion de F&F a traves dek configurador]
+[2015Oct12 12:29:58,439][DEBUG][584128596666_1444669197151][processRequest FCController.java:254][PASO 8 y 9: Llamadas al servicio SLS SIMCARD]
+[2015Oct12 12:29:58,440][DEBUG][584128596666_1444669197151][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 12:29:58,442][DEBUG][584128596666_1444669197151][buildXMLIn SLSSimCardDelegator.java:112][Comando Ensamblado <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_IN>
+	<Login></Login>
+	<Channel>SIEBEL</Channel>
+	<System>SIEBEL</System>
+<SIMCard>
+	<IMSI>734023128596666</IMSI>
+</SIMCard>
+</RTBS_SLS_IN>
+]
+[2015Oct12 12:29:58,539][DEBUG][584128596666_1444669197151][getSLSSimCardInformation FCHelper.java:221][xml <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_OUT>
+	<OperationMessage>
+		<Code>RTBS_SLS_OM0003</Code>
+		<Message>La informacion solicitada no ha sido encontrada en la base de datos</Message>
+	</OperationMessage>
+</RTBS_SLS_OUT>
+
+]
+[2015Oct12 12:29:58,546][DEBUG][584128596666_1444669197151][processRequest FCController.java:274][PASO 10 y 11: Llamadas al servicio de equivalencias]
+[2015Oct12 12:29:58,584][DEBUG][584128596666_1444669197151][processRequest FCController.java:290][PASO 12: Construccion de xml de salidas]
+[2015Oct12 12:29:58,585][DEBUG][584128596666_1444669197151][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 12:29:58,587][DEBUG][584128596666_1444669197151][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Oct12 12:29:58,588][DEBUG][584128596666_1444669197151][processRequest FCController.java:298][Response: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="0000000000000000000" />
+		<PARAM name="MSISDN" value="584128596666" />
+		<PARAM name="IMSI" value="734023128596666" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="null" />
+		<PARAM name="PIN2" value="null" />
+		<PARAM name="PUK2" value="null" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="672.4" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20140522161940" />
+		<PARAM name="ACTIVE_DATE" value="20140522041840" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20210102235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Plan BAM 1250" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20151011000856" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20151110235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00133" />
+			<PARAM name="PRODUCT_DESC" value="Plan BAM 1250" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20140522041840" />
+			<PARAM name="LAST_ACT_DATE" value="20140522041840" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2015Oct12 12:29:58,591][INFO ][584128596666_1444669197151][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="0000000000000000000" />
+		<PARAM name="MSISDN" value="584128596666" />
+		<PARAM name="IMSI" value="734023128596666" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="null" />
+		<PARAM name="PIN2" value="null" />
+		<PARAM name="PUK2" value="null" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="672.4" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20140522161940" />
+		<PARAM name="ACTIVE_DATE" value="20140522041840" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20210102235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Plan BAM 1250" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20151011000856" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="0.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="0.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="0.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="0.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20151110235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00133" />
+			<PARAM name="PRODUCT_DESC" value="Plan BAM 1250" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20140522041840" />
+			<PARAM name="LAST_ACT_DATE" value="20140522041840" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]

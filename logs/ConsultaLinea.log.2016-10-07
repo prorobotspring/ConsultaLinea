@@ -1,0 +1,124 @@
+[2016Oct07 08:18:25,086][INFO ][1475844505086][doPost ConsultaLineaServlet.java:55][XML Recibido: ]
+[2016Oct07 08:18:25,132][DEBUG][1475844505086][processRequest FCController.java:90][]
+[2016Oct07 08:18:25,133][DEBUG][1475844505086][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2016Oct07 08:18:25,134][DEBUG][1475844505086][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2016Oct07 08:18:25,350][ERROR][1475844505086][processRequest FCController.java:107][Codigo de Error: -100 Mensaje de Error: Datos de entrada no validos]
+org.jdom.input.JDOMParseException: Error on line -1: Premature end of file.
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:504)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:108)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:103)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: org.xml.sax.SAXParseException: Premature end of file.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	... 18 more
+Caused by: org.xml.sax.SAXParseException: Premature end of file.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:108)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:103)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Oct07 08:18:25,362][DEBUG][1475844505086][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Oct07 08:18:25,363][INFO ][1475844505086][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-100" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Datos de entrada no validos - Error on line -1: Premature end of file." /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2016Oct07 08:18:41,738][INFO ][1475844521738][doPost ConsultaLineaServlet.java:55][XML Recibido: ]
+[2016Oct07 08:18:41,739][DEBUG][1475844521738][processRequest FCController.java:90][]
+[2016Oct07 08:18:41,741][DEBUG][1475844521738][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2016Oct07 08:18:41,742][DEBUG][1475844521738][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2016Oct07 08:18:41,752][ERROR][1475844521738][processRequest FCController.java:107][Codigo de Error: -100 Mensaje de Error: Datos de entrada no validos]
+org.jdom.input.JDOMParseException: Error on line -1: Premature end of file.
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:504)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:108)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:103)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: org.xml.sax.SAXParseException: Premature end of file.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	... 18 more
+Caused by: org.xml.sax.SAXParseException: Premature end of file.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:108)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:103)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2016Oct07 08:18:41,757][DEBUG][1475844521738][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2016Oct07 08:18:41,758][INFO ][1475844521738][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-100" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Datos de entrada no validos - Error on line -1: Premature end of file." /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]

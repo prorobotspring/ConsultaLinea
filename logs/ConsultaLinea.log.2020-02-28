@@ -1,0 +1,34 @@
+[2020Feb28 10:28:30,289][INFO ][1582901910289][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="SUBSYS" value="SIEBEL"/>        
+		<PARAM name="MSISDN" value="584122165504"/>
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>]
+[2020Feb28 10:28:30,294][DEBUG][1582901910289][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="SUBSYS" value="SIEBEL"/>        
+		<PARAM name="MSISDN" value="584122165504"/>
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>]
+[2020Feb28 10:28:30,296][DEBUG][1582901910289][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2020Feb28 10:28:30,297][DEBUG][1582901910289][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2020Feb28 10:28:30,312][DEBUG][584122165504_1582901910289][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2020Feb28 10:28:58,716][INFO ][1582901938716][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="SUBSYS" value="SIEBEL"/>        
+		<PARAM name="MSISDN" value="584129879743"/>
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>]
+[2020Feb28 10:28:58,718][DEBUG][1582901938716][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="SUBSYS" value="SIEBEL"/>        
+		<PARAM name="MSISDN" value="584129879743"/>
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>]
+[2020Feb28 10:28:58,719][DEBUG][1582901938716][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2020Feb28 10:28:58,721][DEBUG][1582901938716][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2020Feb28 10:28:58,732][DEBUG][584129879743_1582901938716][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]

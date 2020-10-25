@@ -1,0 +1,66 @@
+[2019Oct11 09:30:22,602][INFO ][1570802422602][doPost ConsultaLineaServlet.java:55][XML Recibido: null]
+[2019Oct11 09:30:22,611][DEBUG][1570802422602][processRequest FCController.java:90][]
+[2019Oct11 09:30:22,612][DEBUG][1570802422602][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Oct11 09:30:22,613][DEBUG][1570802422602][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Oct11 09:30:22,663][ERROR][1570802422602][processRequest FCController.java:113][Codigo de Error: -50 Mensaje de Error: Error Generico]
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:33)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:108)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:103)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2019Oct11 09:30:22,666][DEBUG][1570802422602][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2019Oct11 09:30:22,668][INFO ][1570802422602][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-50" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Error Generico - null" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2019Oct11 09:32:01,467][INFO ][1570802521466][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="SUBSYS" value="SIEBEL"/>        
+		<PARAM name="MSISDN" value="584128888888"/>
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>]
+[2019Oct11 09:32:01,468][DEBUG][1570802521466][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="SUBSYS" value="SIEBEL"/>        
+		<PARAM name="MSISDN" value="584128888888"/>
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>]
+[2019Oct11 09:32:01,470][DEBUG][1570802521466][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Oct11 09:32:01,471][DEBUG][1570802521466][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Oct11 09:32:01,488][DEBUG][584128888888_1570802521466][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2019Oct11 09:38:44,617][INFO ][1570802924616][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="SUBSYS" value="SIEBEL"/>        
+		<PARAM name="MSISDN" value="584128888888"/>
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>]
+[2019Oct11 09:38:44,618][DEBUG][1570802924616][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="SUBSYS" value="SIEBEL"/>        
+		<PARAM name="MSISDN" value="584128888888"/>
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>]
+[2019Oct11 09:38:44,620][DEBUG][1570802924616][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Oct11 09:38:44,621][DEBUG][1570802924616][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Oct11 09:38:44,633][DEBUG][584128888888_1570802924616][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]

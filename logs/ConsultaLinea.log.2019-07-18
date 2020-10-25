@@ -1,0 +1,183 @@
+[2019Jul18 09:06:15,721][INFO ][1563456975721][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="VMS"/><PARAM name="MSISDN" value="584128047921"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2019Jul18 09:06:15,725][DEBUG][1563456975721][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="VMS"/><PARAM name="MSISDN" value="584128047921"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2019Jul18 09:06:15,727][DEBUG][1563456975721][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Jul18 09:06:15,728][DEBUG][1563456975721][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Jul18 09:06:15,744][DEBUG][584128047921_1563456975721][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2019Jul18 09:13:33,529][INFO ][1563457413528][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="VMS"/><PARAM name="MSISDN" value="584128047921"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2019Jul18 09:13:33,530][DEBUG][1563457413528][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="VMS"/><PARAM name="MSISDN" value="584128047921"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2019Jul18 09:13:33,532][DEBUG][1563457413528][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Jul18 09:13:33,533][DEBUG][1563457413528][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Jul18 09:13:33,543][DEBUG][584128047921_1563457413528][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2019Jul18 09:14:07,647][INFO ][1563457447647][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="VMS"/><PARAM name="MSISDN" value="584128047921"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2019Jul18 09:14:07,648][DEBUG][1563457447647][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="VMS"/><PARAM name="MSISDN" value="584128047921"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2019Jul18 09:14:07,650][DEBUG][1563457447647][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Jul18 09:14:07,651][DEBUG][1563457447647][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Jul18 09:14:07,661][DEBUG][584128047921_1563457447647][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2019Jul18 09:36:21,846][INFO ][1563458781846][doPost ConsultaLineaServlet.java:55][XML Recibido: ]
+[2019Jul18 09:36:21,848][DEBUG][1563458781846][processRequest FCController.java:90][]
+[2019Jul18 09:36:21,849][DEBUG][1563458781846][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Jul18 09:36:21,850][DEBUG][1563458781846][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Jul18 09:36:21,914][ERROR][1563458781846][processRequest FCController.java:107][Codigo de Error: -100 Mensaje de Error: Datos de entrada no validos]
+org.jdom.input.JDOMParseException: Error on line -1: Premature end of file.
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:504)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:108)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:103)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: org.xml.sax.SAXParseException: Premature end of file.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	... 18 more
+Caused by: 
+org.xml.sax.SAXParseException: Premature end of file.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:108)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:103)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2019Jul18 09:36:21,919][DEBUG][1563458781846][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2019Jul18 09:36:21,920][INFO ][1563458781846][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-100" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Datos de entrada no validos - Error on line -1: Premature end of file." /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2019Jul18 09:36:27,513][INFO ][1563458787513][doPost ConsultaLineaServlet.java:55][XML Recibido: ]
+[2019Jul18 09:36:27,515][DEBUG][1563458787513][processRequest FCController.java:90][]
+[2019Jul18 09:36:27,516][DEBUG][1563458787513][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Jul18 09:36:27,517][DEBUG][1563458787513][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Jul18 09:36:27,527][ERROR][1563458787513][processRequest FCController.java:107][Codigo de Error: -100 Mensaje de Error: Datos de entrada no validos]
+org.jdom.input.JDOMParseException: Error on line -1: Premature end of file.
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:504)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:108)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:103)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: org.xml.sax.SAXParseException: Premature end of file.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	... 18 more
+Caused by: 
+org.xml.sax.SAXParseException: Premature end of file.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:108)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:103)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2019Jul18 09:36:27,531][DEBUG][1563458787513][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2019Jul18 09:36:27,532][INFO ][1563458787513][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-100" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Datos de entrada no validos - Error on line -1: Premature end of file." /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2019Jul18 09:36:31,668][INFO ][1563458791668][doPost ConsultaLineaServlet.java:55][XML Recibido: null]
+[2019Jul18 09:36:31,669][DEBUG][1563458791668][processRequest FCController.java:90][]
+[2019Jul18 09:36:31,671][DEBUG][1563458791668][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Jul18 09:36:31,672][DEBUG][1563458791668][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Jul18 09:36:31,674][ERROR][1563458791668][processRequest FCController.java:113][Codigo de Error: -50 Mensaje de Error: Error Generico]
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:33)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:108)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:103)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2019Jul18 09:36:31,676][DEBUG][1563458791668][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2019Jul18 09:36:31,677][INFO ][1563458791668][doPost ConsultaLineaServlet.java:59][Response generado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="-50" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="Error Generico - null" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2019Jul18 13:12:31,623][INFO ][1563471751623][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="VMS"/><PARAM name="MSISDN" value="584128047921"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2019Jul18 13:12:31,625][DEBUG][1563471751623][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="VMS"/><PARAM name="MSISDN" value="584128047921"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2019Jul18 13:12:31,626][DEBUG][1563471751623][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Jul18 13:12:31,628][DEBUG][1563471751623][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Jul18 13:12:31,638][DEBUG][584128047921_1563471751623][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2019Jul18 13:13:15,638][INFO ][1563471795638][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="VMS"/><PARAM name="MSISDN" value="584128047921"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2019Jul18 13:13:15,640][DEBUG][1563471795638][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?><EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="VMS"/><PARAM name="MSISDN" value="584128047921"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2019Jul18 13:13:15,641][DEBUG][1563471795638][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2019Jul18 13:13:15,642][DEBUG][1563471795638][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2019Jul18 13:13:15,653][DEBUG][584128047921_1563471795638][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]

@@ -1,0 +1,377 @@
+[2018Aug06 09:04:23,374][INFO ][1533518351251][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaLinea - VERSION: 1.0]
+[2018Aug06 09:04:23,377][INFO ][1533518351251][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de linea]
+[2018Aug06 09:04:23,380][INFO ][1533562463379][doPost ConsultaLineaServlet.java:55][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="SUBSYS" value="SIEBEL"/>        
+		<PARAM name="MSISDN" value="584120600031"/>
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>]
+[2018Aug06 09:04:23,394][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="${ERROR_CODE}" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="${ERROR_DESCRIPTION}" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2018Aug06 09:04:23,396][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="]
+[2018Aug06 09:04:23,405][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ERROR_CODE]
+[2018Aug06 09:04:23,411][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " /> 
+		<PARAM name="ERROR_DESCRIPTION" value="]
+[2018Aug06 09:04:23,412][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ERROR_DESCRIPTION]
+[2018Aug06 09:04:23,414][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2018Aug06 09:04:23,417][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="${ICCID}" />
+		<PARAM name="MSISDN" value="${SubscriberID}" />
+		<PARAM name="IMSI" value="${IMSI}" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="${PUK}" />
+		<PARAM name="PIN2" value="${PIN}" />
+		<PARAM name="PUK2" value="${PUK2}" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="${currentState}" />
+		<PARAM name="MONEY_SITUATION" value="${MONEY_SITUATION}" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="${SERVICEPROVIDERID}" />
+		<PARAM name="INSTALL_DATE" value="${INSTALL_DATE}" />
+		<PARAM name="ACTIVE_DATE" value="${ACTIVE_DATE}" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="${DEACTIVATED}" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="${LANGUAGE_ID}" />
+		<PARAM name="TARIFFID" value="${PRODUCT_DESC_CERO}" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="${LAST_CALL_DATE}" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="${NUM_FREE_SMS}" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="${BONUS1}" />
+		<PARAM name="BONUS2" value="${BONUS2}" />
+		<PARAM name="NUM_FREE_SECONDS" value="${NUM_FREE_SECONDS}" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="${RET_BONUS}" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="${RET_BONUS_EDATE}" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="${PRODUCT_NAME_CERO}" />
+			<PARAM name="PRODUCT_DESC" value="${PRODUCT_DESC_CERO}" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="${ACT_DATE}" />
+			<PARAM name="LAST_ACT_DATE" value="${LAST_ACT_DATE}" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+]
+[2018Aug06 09:04:23,419][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="]
+[2018Aug06 09:04:23,421][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ICCID]
+[2018Aug06 09:04:23,423][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="MSISDN" value="]
+[2018Aug06 09:04:23,424][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: SubscriberID]
+[2018Aug06 09:04:23,426][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="IMSI" value="]
+[2018Aug06 09:04:23,427][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: IMSI]
+[2018Aug06 09:04:23,429][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="]
+[2018Aug06 09:04:23,430][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PUK]
+[2018Aug06 09:04:23,432][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="PIN2" value="]
+[2018Aug06 09:04:23,433][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PIN]
+[2018Aug06 09:04:23,435][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="PUK2" value="]
+[2018Aug06 09:04:23,437][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PUK2]
+[2018Aug06 09:04:23,438][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="]
+[2018Aug06 09:04:23,440][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: currentState]
+[2018Aug06 09:04:23,441][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="MONEY_SITUATION" value="]
+[2018Aug06 09:04:23,443][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: MONEY_SITUATION]
+[2018Aug06 09:04:23,444][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="]
+[2018Aug06 09:04:23,446][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: SERVICEPROVIDERID]
+[2018Aug06 09:04:23,448][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="INSTALL_DATE" value="]
+[2018Aug06 09:04:23,449][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: INSTALL_DATE]
+[2018Aug06 09:04:23,451][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="ACTIVE_DATE" value="]
+[2018Aug06 09:04:23,452][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ACTIVE_DATE]
+[2018Aug06 09:04:23,454][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="]
+[2018Aug06 09:04:23,455][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: DEACTIVATED]
+[2018Aug06 09:04:23,457][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="]
+[2018Aug06 09:04:23,459][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: LANGUAGE_ID]
+[2018Aug06 09:04:23,460][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="TARIFFID" value="]
+[2018Aug06 09:04:23,462][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_DESC_CERO]
+[2018Aug06 09:04:23,463][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="]
+[2018Aug06 09:04:23,465][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: LAST_CALL_DATE]
+[2018Aug06 09:04:23,467][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="]
+[2018Aug06 09:04:23,468][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: NUM_FREE_SMS]
+[2018Aug06 09:04:23,470][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="]
+[2018Aug06 09:04:23,471][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: BONUS1]
+[2018Aug06 09:04:23,473][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="BONUS2" value="]
+[2018Aug06 09:04:23,474][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: BONUS2]
+[2018Aug06 09:04:23,476][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="NUM_FREE_SECONDS" value="]
+[2018Aug06 09:04:23,478][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: NUM_FREE_SECONDS]
+[2018Aug06 09:04:23,479][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="]
+[2018Aug06 09:04:23,481][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: RET_BONUS]
+[2018Aug06 09:04:23,482][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="]
+[2018Aug06 09:04:23,484][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: RET_BONUS_EDATE]
+[2018Aug06 09:04:23,486][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="]
+[2018Aug06 09:04:23,487][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_NAME_CERO]
+[2018Aug06 09:04:23,489][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="PRODUCT_DESC" value="]
+[2018Aug06 09:04:23,490][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_DESC_CERO]
+[2018Aug06 09:04:23,492][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="]
+[2018Aug06 09:04:23,493][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ACT_DATE]
+[2018Aug06 09:04:23,495][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="LAST_ACT_DATE" value="]
+[2018Aug06 09:04:23,497][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: LAST_ACT_DATE]
+[2018Aug06 09:04:23,498][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+]
+[2018Aug06 09:04:23,501][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: 		<RECORD name="PRODUCT" value="${PRODUCT}">
+			<PARAM name="PRODUCT_NAME" value="${PRODUCT_NAME}" />
+			<PARAM name="PRODUCT_DESC" value="${PRODUCT_DESC}" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="${ACT_DATE}" />
+			<PARAM name="LAST_ACT_DATE" value="${LAST_ACT_DATE}" />
+			<PARAM name="EXP_DATE" value="${EXP_DATE}" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+]
+[2018Aug06 09:04:23,503][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: 		<RECORD name="PRODUCT" value="]
+[2018Aug06 09:04:23,504][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT]
+[2018Aug06 09:04:23,506][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: ">
+			<PARAM name="PRODUCT_NAME" value="]
+[2018Aug06 09:04:23,508][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_NAME]
+[2018Aug06 09:04:23,509][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="PRODUCT_DESC" value="]
+[2018Aug06 09:04:23,511][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_DESC]
+[2018Aug06 09:04:23,512][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="]
+[2018Aug06 09:04:23,514][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ACT_DATE]
+[2018Aug06 09:04:23,515][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="LAST_ACT_DATE" value="]
+[2018Aug06 09:04:23,517][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: LAST_ACT_DATE]
+[2018Aug06 09:04:23,518][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="EXP_DATE" value="]
+[2018Aug06 09:04:23,520][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: EXP_DATE]
+[2018Aug06 09:04:23,522][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="null" /> 
+			<PARAM name="RENEWAL_DAY" value="null" /> 
+		</RECORD>
+]
+[2018Aug06 09:04:23,524][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: 	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2018Aug06 09:04:23,526][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: 	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2018Aug06 09:04:23,528][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8" ?>
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="MSISDN" value="${SubscriberID}" />
+		<PARAM name="IMSI" value="${IMSI}" />
+		<PARAM name="STATE" value="${currentState}" />
+		<PARAM name="MONEY_SITUATION" value="${MONEY_SITUATION}" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2018Aug06 09:04:23,530][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8" ?>
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="MSISDN" value="]
+[2018Aug06 09:04:23,532][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: SubscriberID]
+[2018Aug06 09:04:23,533][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="IMSI" value="]
+[2018Aug06 09:04:23,535][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: IMSI]
+[2018Aug06 09:04:23,536][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="STATE" value="]
+[2018Aug06 09:04:23,538][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: currentState]
+[2018Aug06 09:04:23,539][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="MONEY_SITUATION" value="]
+[2018Aug06 09:04:23,541][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: MONEY_SITUATION]
+[2018Aug06 09:04:23,542][DEBUG][1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2018Aug06 09:04:23,544][DEBUG][1533562463379][processRequest FCController.java:90][<?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage MessageId="" IntObjectName="PTSVQRYSERPRE">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="SUBSYS" value="SIEBEL"/>        
+		<PARAM name="MSISDN" value="584120600031"/>
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>]
+[2018Aug06 09:04:23,546][DEBUG][1533562463379][processRequest FCController.java:97][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2018Aug06 09:04:23,554][DEBUG][1533562463379][buildRequest FCHelper.java:104][INICIO de parser XML de entrada]
+[2018Aug06 09:04:23,993][DEBUG][584120600031_1533562463379][processRequest FCController.java:151][PASO 2: Consulta de datos linea RTBS]
+[2018Aug06 09:04:24,005][DEBUG][584120600031_1533562463379][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>${username}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>${date}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>${suscriberID}</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2018Aug06 09:04:24,007][DEBUG][584120600031_1533562463379][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>]
+[2018Aug06 09:04:24,009][DEBUG][584120600031_1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: username]
+[2018Aug06 09:04:24,010][DEBUG][584120600031_1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2018Aug06 09:04:24,012][DEBUG][584120600031_1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2018Aug06 09:04:24,014][DEBUG][584120600031_1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>]
+[2018Aug06 09:04:24,016][DEBUG][584120600031_1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2018Aug06 09:04:24,018][DEBUG][584120600031_1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>]
+[2018Aug06 09:04:24,020][DEBUG][584120600031_1533562463379][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: suscriberID]
+[2018Aug06 09:04:24,022][DEBUG][584120600031_1533562463379][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
